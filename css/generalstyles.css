@@ -25,10 +25,22 @@ nav ul {
   overflow: hidden;
 }
 nav li {
-  text-align: center;
-  background-color: rgb(132, 0, 255);
   display: inline;
+  background-color: aliceblue;
+}
+nav li a{
+  display: block;
+  background-color: blueviolet;
   font-size: 150%;
+  text-align: center;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: aliceblue;
+  color: rgb(27, 0, 41);
+}
+.active {
+  background-color: brown;
 }
 main {
   margin-left: 10%;
@@ -43,7 +55,7 @@ h2 {
 p {
   font-size: large;
 }
-#asideicon{
+#asideicon {
   display: inline;
   float: right;
   width: 10%;
