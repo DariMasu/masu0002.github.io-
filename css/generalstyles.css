@@ -1,11 +1,6 @@
 header {
   background-color: blue;
   position: sticky;
-  top: 0;
-  padding: 20;
-}
-body {
-  background-color: blanchedalmond;
 }
 nav {
   background-color: rgb(2, 138, 138);
@@ -28,7 +23,7 @@ nav li {
   display: inline;
   background-color: aliceblue;
 }
-nav li a{
+nav li a {
   display: block;
   background-color: blueviolet;
   font-size: 150%;
@@ -42,9 +37,25 @@ nav li a:hover {
 .active {
   background-color: brown;
 }
+#asideicon {
+  display: inline;
+  float: right;
+  width: 10%;
+  margin: 2.5%;
+}
+#maincontainer{
+  display: flex;
+  justify-items: flex-end;
+  width: 100%;
+}
+body {
+  background-color: blanchedalmond;
+}
 main {
-  margin-left: 10%;
-  margin-right: 10%;
+  background-color: #555555;
+  margin: 2%;
+  width: 74%;
+  padding: 1% 1%;
 }
 h1 {
   color: rgb(27, 0, 41);
@@ -55,9 +66,28 @@ h2 {
 p {
   font-size: large;
 }
-#asideicon {
-  display: inline;
+aside{
+  background-color: aqua;
+  width: 20%;
   float: right;
-  width: 10%;
-  margin: 2.5%;
+  margin: 2%;
+  height: auto;
+}
+aside ul{
+  list-style-type: none;
+  margin: 2% 2%;
+  padding: 0;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
+  height: auto;
+}
+aside ul li a{
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+aside ul li a:hover {
+  background-color: #555555;
+  color: white;
 }
