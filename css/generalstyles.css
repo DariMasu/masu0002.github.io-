@@ -9,9 +9,14 @@ header {
 }
 nav {
   background-color: rgb(99, 99, 99);
-  display: block;
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
   height: 5%;
+}
+/* PLEASE DONT FORGET TO FIX THIS SHIT*/
+nav:last-child{
+justify-self: right;
 }
 nav ul {
   background-color: rgba(0, 0, 0, 0);
@@ -19,9 +24,8 @@ nav ul {
   justify-content: space-evenly;
   flex-wrap: wrap;
   list-style-type: none;
-  width: 50%;
+  width: 60%;
   padding: 0;
-  margin-left: 25%;
   overflow: hidden;
 }
 nav li {
@@ -43,11 +47,11 @@ nav li a:hover {
 .active {
   background-color: rgb(197, 197, 197);
 }
-#asideicon {
-  display: inline;
+.barsicon {
   float: right;
-  width: 10%;
-  margin: 2.5%;
+  margin: 1%;
+  height: 100%;
+  
 }
 #maincontainer{
   display: flex;
@@ -81,15 +85,15 @@ aside{
   background-color: rgb(151, 151, 151);
   width: 20%;
   float: right;
-  margin: 1%;
+  margin-bottom: 1%;
   height: auto;
 }
 aside ul{
   list-style-type: none;
-  margin: 1% 1%;
   padding: 0;
   text-wrap: wrap;
   overflow-wrap: break-word;
+  overflow: hidden;
   height: auto;
 }
 aside ul li a{
