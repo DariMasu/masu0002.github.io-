@@ -1,3 +1,4 @@
+/* header styles */
 header {
   background-color: rgb(255, 255, 255);
   position: sticky;
@@ -10,6 +11,8 @@ header {
   height: 4%;
   /*mix-blend-mode: ; may need to be added later*/
 }
+
+/* nav bar styles */
 nav {
   background-color: rgb(99, 99, 99);
   display: flex;
@@ -51,10 +54,14 @@ nav li a:hover {
   font-size: 1.7rem;
   align-self: center;
 }
+
+/* body styles*/
 #maincontainer{
   display: flex;
   justify-items: flex-end;
   width: 100%;
+  height: auto;
+  min-height: 100%;
 }
 body {
   background-image: url("/resources/paperbackground.jpg");
@@ -63,10 +70,12 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  height: auto;
+  min-height: 100vh;
 }
 main {
   background-color: #82828258;
-  margin: 2% 3%;
+  margin: 2% 3% 8% 3%;
   width: auto;
   height: auto;
   min-width: 80%;
@@ -81,11 +90,12 @@ h2 {
 p {
   font-size: large;
 }
+
+/* aside styles*/
 aside{
   background-color: rgb(151, 151, 151);
   width: auto;
   max-width: 20%;
-  margin-bottom: 2%;
   height: auto;
   overflow: hidden;
 }
@@ -107,12 +117,14 @@ aside ul li a:hover {
   background-color: #555555;
   color: white;
 }
+
+/* footer styles*/
 footer {
   background-color: rgb(99, 99, 99);
-  padding: 1%;
-  bottom: 0;
   width: 100%;
-  height: auto;
+  height: 10%;
+  bottom: 0;
+  position: fixed;
 }
 footer ul{
   display: inline-flex;
