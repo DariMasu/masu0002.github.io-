@@ -1,5 +1,8 @@
 /* header styles */
 header {
+  background-image: url("/resources/paperbackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #461220;
   position: sticky;
   top: 0;
@@ -14,40 +17,43 @@ header {
 
 /* nav bar styles */
 nav {
-  background-color: #8c2f39;
+  background-color: #782138;
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
-  height: 5%;
 }
 nav ul {
   display: inline-flex;
   justify-content: space-evenly;
+
   flex-wrap: wrap;
   list-style-type: none;
-  width: 60%;
+  width: 80%;
   padding: 0;
+  margin: 0.5%;
   overflow: hidden;
 }
 nav li {
   display: inline;
+  background-image: url("/resources/navpaper.webp");
+  background-size: 105% 120%;
+  background-repeat: no-repeat;
+  padding: 0.5% 3%;
 }
 nav li a {
-  background-color: #fcb9b2;
-  background-image: url("/resources/navpaper.webp");
+  display: block;
   font-size: 150%;
   text-align: center;
   text-decoration: none;
-  color: rgb(0, 0, 0);
-  padding: 6% 6%;
+  color: #461220;
+}
+nav li:hover {
+  background-image: url("/resources/paperbackground.jpg");
 }
 nav li a:hover {
-  background-color: aliceblue;
-  color: rgb(142, 142, 142);
+  color: #8c2f39;
 }
 .active {
-  background-color: #461220;
-  color: #fcb9b2;
+  color: #b34d59;
 }
 .barsicon {
   margin-left: auto;
@@ -65,8 +71,7 @@ nav li a:hover {
   min-height: 100%;
 }
 body {
-  background-color: #fed0bb;
-  /*background-image: url("/resources/paperbackground.jpg");*/
+  background-image: url("/resources/paperbackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -76,8 +81,8 @@ body {
   min-height: 100%;
 }
 main {
-  background-color: #fcb9b2;
-  margin: 2% 3% 4% 3%;
+  background-color: #fcb9b24b;
+  margin: 2% 3% 12vh 3%;
   width: 85%;
   height: auto;
   min-height: 63vh;
@@ -96,9 +101,12 @@ p {
 /* aside styles*/
 aside{
   background-color: #b34d59;
-  width: 15%;
+  width: 10%;
   height: auto;
   overflow: hidden;
+  background-image: url("/resources/asidebg.webp");
+  background-size: 100%;
+  background-repeat: repeat-y;
 }
 aside ul{
   list-style-type: none;
@@ -110,18 +118,19 @@ aside ul{
 }
 aside ul li a{
   display: block;
-  color: black;
-  padding: 8px 16px;
+  color: #461220;
+  padding: 7% 14%;
   text-decoration: none;
+  text-align: end;
 }
 aside ul li a:hover {
-  background-color: #4a4e69;
-  color: white;
+  color: black;
+  margin: 5%;
 }
 
 /* footer styles*/
 footer {
-  background-color: #461220;
+  background-color: #782138;
   width: 100%;
   height: 10%;
   bottom: 0;
@@ -140,7 +149,7 @@ footer ul li{
   display: inline;
 }
 .socialsicon{
-  width: 7hv;
+  width: 7vh;
   height: 7vh;
   mix-blend-mode: multiply;
 }
