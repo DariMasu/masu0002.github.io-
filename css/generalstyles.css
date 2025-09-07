@@ -1,6 +1,6 @@
 /* header styles */
 header {
-  background-color: rgb(255, 255, 255);
+  background-color: #461220;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -8,13 +8,13 @@ header {
 }
 .logo{
   width: 15%;
-  height: 4%;
-  /*mix-blend-mode: ; may need to be added later*/
+  margin-top: 0.4%;
+  mix-blend-mode: multiply;
 }
 
 /* nav bar styles */
 nav {
-  background-color: rgb(99, 99, 99);
+  background-color: #8c2f39;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -31,10 +31,10 @@ nav ul {
 }
 nav li {
   display: inline;
-  background-color: rgb(255, 255, 255);
 }
 nav li a {
-  background-color: rgb(141, 141, 141);
+  background-color: #fcb9b2;
+  background-image: url("/resources/navpaper.webp");
   font-size: 150%;
   text-align: center;
   text-decoration: none;
@@ -46,7 +46,8 @@ nav li a:hover {
   color: rgb(142, 142, 142);
 }
 .active {
-  background-color: rgb(197, 197, 197);
+  background-color: #461220;
+  color: #fcb9b2;
 }
 .barsicon {
   margin-left: auto;
@@ -64,21 +65,22 @@ nav li a:hover {
   min-height: 100%;
 }
 body {
-  background-image: url("/resources/paperbackground.jpg");
+  background-color: #fed0bb;
+  /*background-image: url("/resources/paperbackground.jpg");*/
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   height: auto;
-  min-height: 100vh;
+  min-height: 100%;
 }
 main {
-  background-color: #82828258;
-  margin: 2% 3% 8% 3%;
-  width: auto;
+  background-color: #fcb9b2;
+  margin: 2% 3% 4% 3%;
+  width: 85%;
   height: auto;
-  min-width: 80%;
+  min-height: 63vh;
   padding: 1% 1%;
 }
 h1 {
@@ -93,9 +95,8 @@ p {
 
 /* aside styles*/
 aside{
-  background-color: rgb(151, 151, 151);
-  width: auto;
-  max-width: 20%;
+  background-color: #b34d59;
+  width: 15%;
   height: auto;
   overflow: hidden;
 }
@@ -114,13 +115,13 @@ aside ul li a{
   text-decoration: none;
 }
 aside ul li a:hover {
-  background-color: #555555;
+  background-color: #4a4e69;
   color: white;
 }
 
 /* footer styles*/
 footer {
-  background-color: rgb(99, 99, 99);
+  background-color: #461220;
   width: 100%;
   height: 10%;
   bottom: 0;
