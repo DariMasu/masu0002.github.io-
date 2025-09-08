@@ -21,6 +21,21 @@ nav {
   display: flex;
   justify-content: space-evenly;
 }
+
+/* TEST PROPERTIES */
+nav::after{
+  content: '';
+  display:block; 
+  position:absolute;
+  z-index:0;
+  top:0;
+  left:-4px;
+  right:-4px;
+  bottom:0;
+  box-shadow: 0px 5px 5px -5px #0099ff;
+/* END OF TEST PROPERTIES */
+
+}
 nav ul {
   display: inline-flex;
   justify-content: space-evenly;
@@ -100,21 +115,22 @@ p {
 
 /* aside styles*/
 aside{
-  background-color: #b34d59;
+  background-image: linear-gradient(to right, #46122000, #461220, #461220);
   width: 10%;
-  height: auto;
+  height: 76vh;
   overflow: hidden;
-  background-image: url("/resources/asidebg.webp");
-  background-size: 100%;
-  background-repeat: repeat-y;
 }
 aside ul{
   list-style-type: none;
   padding: 0;
+  margin: 0;
   text-wrap: wrap;
   overflow-wrap: break-word;
   overflow: hidden;
-  height: auto;
+  height: inherit;
+  background-image: url("/resources/asidebg.webp");
+  background-size: 100%;
+  background-repeat: repeat-y;
 }
 aside ul li a{
   display: block;
