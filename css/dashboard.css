@@ -49,7 +49,10 @@ tr:nth-child(odd){
 }
 
 /* progress bar legend styles */
-ul li{
+#legend{
+    display: flex;
+}
+#legend li{
     display: inline;
     margin: 0 2%;
 }

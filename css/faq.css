@@ -1,0 +1,16 @@
+.question{
+    background-image: url("/resources/paperbackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.5% 1.5%;
+    margin: 2%;
+    box-shadow: 3px 3px 2px 2px #461220;
+}
+.answer{
+    opacity: 0;
+    height: 0;
+}
+.answer:hover{
+    opacity: 100;
+    height: auto;
+}

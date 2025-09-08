@@ -3,7 +3,6 @@ header {
   background-image: url("/resources/paperbackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #461220;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -101,7 +100,7 @@ main {
   width: 85%;
   height: auto;
   min-height: 63vh;
-  padding: 1% 1%;
+  padding: 1% 2%;
 }
 h1 {
   color: rgb(0, 0, 0);
