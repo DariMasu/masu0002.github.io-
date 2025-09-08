@@ -22,7 +22,7 @@ nav {
   justify-content: space-evenly;
 }
 
-/* TEST PROPERTIES */
+/* TEST PROPERTIES
 nav::after{
   content: '';
   display:block; 
@@ -33,9 +33,9 @@ nav::after{
   right:-4px;
   bottom:0;
   box-shadow: 0px 5px 5px -5px #0099ff;
-/* END OF TEST PROPERTIES */
-
 }
+END OF TEST PROPERTIES */
+
 nav ul {
   display: inline-flex;
   justify-content: space-evenly;
@@ -117,7 +117,6 @@ p {
 aside{
   background-image: linear-gradient(to right, #46122000, #461220, #461220);
   width: 10%;
-  height: 76vh;
   overflow: hidden;
 }
 aside ul{
@@ -127,7 +126,7 @@ aside ul{
   text-wrap: wrap;
   overflow-wrap: break-word;
   overflow: hidden;
-  height: inherit;
+  height: 100%;
   background-image: url("/resources/asidebg.webp");
   background-size: 100%;
   background-repeat: repeat-y;

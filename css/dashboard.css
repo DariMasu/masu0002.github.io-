@@ -1,3 +1,73 @@
+/* table styles */
 table, th, td{
-    border: 1px solid #782138;
+    border: 2px solid #782138;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 0.1% 0.1%;
+}
+/* TEST PROPERTIES, SHOULD BE IMPLEMENTED FROM 4TH TO LAST COL
+tr:nth-child(odd){
+    background-color:#fff
+}
+tr:nth-child(odd){
+    background-color:#782138
+}
+*/
+
+/* progress bar styles */
+#progressborder{
+    display: inline-block;
+    border-style: solid;
+    border-color: #461220;
+    border-radius: 5px;
+    margin: 2%;
+    width: 100vh;
+    z-index: 100;
+}
+#nbsa{
+    display: inline-block;
+    background-color: #fcb9b2;
+    margin: 0;
+    padding: 0;
+    border-radius: 2px;
+    height: 100%;
+    width: 75%;
+    z-index: 100;
+    text-align: end;
+}
+#currentprogress{
+    background-color: #782138;
+    border-radius: 2px;
+    height: 100%;
+    width: 40%;
+}
+#potentialprogress{
+    background-color: #b34d59;
+    border-radius: 2px;
+    height: 100%;
+    width: 60%;
+}
+
+/* progress bar legend styles */
+ul li{
+    display: inline;
+    margin: 0 2%;
+}
+#nbsalegend{
+    color: #461220;
+    background-color: #fcb9b2;
+    padding: 1%;
+    border-radius: 5px;
+}
+#potproglegend{
+    color: #461220;
+    background-color: #b34d59;
+    padding: 1%;
+    border-radius: 5px;
+}
+#curproglegend{
+    color: #fcb9b2;
+    background-color: #782138;
+    padding: 1%;
+    border-radius: 5px;
 }
