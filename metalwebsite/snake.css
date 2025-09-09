@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "blackcraft";
+  src: url("blackcraft/Blackcraft.ttf") format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  background-color: black;
+  display: inline;
+  justify-content: center;
+  margin: 0;
+}
+
+.game_border {
+  border: rgb(255, 60, 0) solid 10px;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 10px rgb(255, 145, 0);
+  display: grid;
+  height: 81vh;
+  width: 40.5vw;
+  margin-left: 30vw;
+}
+
+.game_border_2 {
+  border-radius: 30px;
+  display: grid;
+  box-shadow: inset 0 0 0 10px rgb(255, 145, 0);
+  height: 80vh;
+  width: 40vw;
+}
+
+#game_board {
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: repeat(20, 2vw);
+  grid-template-rows: repeat(20, 4vh);
+  height: 80vh;
+  width: 40vw;
+  margin: 0.5vh;
+  background-image: url(snimki/floor.jpg);
+}
+
+#instruction {
+  font-size: 1rem;
+  position: absolute;
+  top: 60vh;
+  width: 40vw;
+  text-align: center;
+  padding: 5%;
+  margin-left: 26vw;
+  color: rgb(215, 153, 60);
+}
+
+#logo {
+  margin: auto;
+  height: 40vh;
+  width: 20vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 15vh;
+}
+
+.scores {
+  font-family: "blackcraft";
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#current_score {
+  float: inline-start;
+  margin-left: 25vw;
+  color: rgb(182, 182, 182);
+}
+
+#high_score {
+  float: inline-end;
+  margin-right: 25vw;
+  color: rgb(182, 182, 182);
+}
+
+.snake {
+  background-color: rgba(29, 46, 82, 0.452);
+  background-image: url(snimki/skeleton_minion.png);
+}
+
+.food {
+  border-radius: 30px;
+  background-image: url(snimki/flame.png);
+}

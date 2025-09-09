@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="BG-bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="snake.css" type="text/css" />
+    <script src="snake.js" defer></script>
+
+    <title>SAVE THE CHURCH</title>
+  </head>
+
+  <body>
+    <div class="scores">
+      <h2 id="current_score">
+        CURRENT SCORE: <span id="current_score_VAL"> 0 </span>
+      </h2>
+      <h2 id="high_score">
+        HIGHEST SCORE: <span id="high_score_VAL"> 0 </span>
+      </h2>
+
+      <script>
+        function updateScore() {
+          let currentScore = snake.length - 1;
+          document.getElementById("current_score_VAL").innerText = currentScore;
+          score.style.display = "block";
+        }
+
+        function updateHighScore() {
+          let currentScore = snake.length - 1;
+          if (currentScore > high_score_VAL) {
+            high_score_VAL = currentScore;
+            document.getElementById("high_score_VAL").innerText = currentScore;
+          }
+          highScoreText.style.display = "block";
+        }
+      </script>
+    </div>
+
+    <div class="game_border">
+      <div class="game_border_2">
+        <div id="game_board">
+          <img src="snimki/snake_logo.png" alt="logo" id="logo" />
+        </div>
+      </div>
+    </div>
+
+    <div id="instruction">
+      <h2>Спаси църквата от Юронимъс, като загасиш огъня!</h2>
+      <h2>Натисни спейсбара, за да започнеш!</h2>
+    </div>
+  </body>
+</html>

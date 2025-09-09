@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "blackcraft";
+  src: url("blackcraft/Blackcraft.ttf") format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+#scores {
+  font-size: 1.2rem;
+}
+
+#title {
+  font-family: "blackcraft";
+  font-size: 2em;
+  color: #91e09e;
+}
+body {
+  text-align: center;
+  background-color: #355758;
+  overflow: hidden;
+}
+
+#gameCanvas {
+  background: url("snimki/graveyard.jpg") no-repeat center;
+  background-size: cover;
+  display: block;
+  margin: auto;
+  position: relative;
+}

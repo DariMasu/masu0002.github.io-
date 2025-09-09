@@ -9,7 +9,7 @@ header {
   width: 100%;
 }
 .logo{
-  width: 15%;
+  width: 9%;
   margin-top: 0.4%;
   mix-blend-mode: multiply;
 }
@@ -19,39 +19,26 @@ nav {
   background-color: #782138;
   display: flex;
   justify-content: space-evenly;
+  box-shadow: 0px -4px 2px #782138, 0px 4px 2px #782138;
 }
-
-/* TEST PROPERTIES
-nav::after{
-  content: '';
-  display:block; 
-  position:absolute;
-  z-index:0;
-  top:0;
-  left:-4px;
-  right:-4px;
-  bottom:0;
-  box-shadow: 0px 5px 5px -5px #0099ff;
-}
-END OF TEST PROPERTIES */
 
 nav ul {
   display: inline-flex;
   justify-content: space-evenly;
-
   flex-wrap: wrap;
   list-style-type: none;
   width: 80%;
   padding: 0;
-  margin: 0.5%;
+  margin: 0.7%;
   overflow: hidden;
 }
 nav li {
   display: inline;
   background-image: url("/resources/navpaper.webp");
   background-size: 105% 120%;
+  background-position: center;
   background-repeat: no-repeat;
-  padding: 0.5% 3%;
+  padding: 0.9% 3%;
 }
 nav li a {
   display: block;
@@ -59,9 +46,6 @@ nav li a {
   text-align: center;
   text-decoration: none;
   color: #461220;
-}
-nav li:hover {
-  background-image: url("/resources/paperbackground.jpg");
 }
 nav li a:hover {
   color: #8c2f39;
@@ -111,6 +95,14 @@ h2 {
 p {
   font-size: large;
 }
+.portraitimage{
+    height: 25%;
+    width: 25%;
+}
+.landscapeimage{
+    height: 25%;
+    width: 25%;
+}
 
 /* aside styles*/
 aside{
@@ -130,6 +122,9 @@ aside ul{
   background-size: 100%;
   background-repeat: repeat-y;
 }
+aside ul li{
+  border-bottom: 2px #461220;
+}
 aside ul li a{
   display: block;
   color: #461220;
@@ -138,8 +133,8 @@ aside ul li a{
   text-align: end;
 }
 aside ul li a:hover {
-  color: black;
-  margin: 5%;
+  font-size: 105%;
+  color: #8c2f39;
 }
 
 /* footer styles*/
