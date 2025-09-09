@@ -125,16 +125,27 @@ aside ul{
 aside ul li{
   margin-top: 10%;
 }
-aside ul li a{
+aside ul li a:not(#closemenuanchor){
   display: block;
   color: #461220;
   padding: 10% 20%;
   text-decoration: none;
   text-align: end;
 }
-aside ul li a:hover {
+aside ul li a:hover:not(#closemenuanchor) {
   font-size: 105%;
   font-weight: bold;
+}
+#closemenuanchor{
+  display: block;
+  height: 4vh;
+  width: 4vh;
+  padding: 10% 20%;
+}
+#closemenuicon{
+  height: 100%;
+  width: 100%;
+  float: left;
 }
 
 /* footer styles*/
