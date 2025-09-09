@@ -3,17 +3,23 @@ table, th, td{
     border: 2px solid #782138;
     text-align: center;
     border-collapse: collapse;
-    padding: 0.1% 0.1%;
+    padding: 0.5vh 1vh;
+    width: fit-content;
+    background-color: #fcb9b260;
 }
-/* TEST PROPERTIES, SHOULD BE IMPLEMENTED FROM 4TH TO LAST COL
-tr:nth-child(odd){
-    background-color:#fff
+th{
+    text-decoration: double;
+    background-color: #b34d59;
 }
-tr:nth-child(odd){
-    background-color:#782138
+.examtype{
+    text-align: left;
 }
-*/
-
+.coursestatus{
+    background-color: #fcb9b2;
+}
+.examstatus{
+    background-color: #b34d59;
+}
 /* progress bar styles */
 #progressborder{
     display: inline-block;
