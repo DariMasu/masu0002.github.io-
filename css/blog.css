@@ -8,7 +8,7 @@
 }
 
 /* design styles */
-details {
+details, #blogpostlink {
   display: flex;
   flex-direction: column;
   background-image: url("/resources/stickynote.png");
@@ -16,7 +16,7 @@ details {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 10% 0;
+  margin-bottom: 10%;
 }
 summary {
   display: block;
@@ -30,7 +30,7 @@ summary {
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 3%;
-  padding-top: 1%;
+  padding-top: 3%;
 }
 #blogpostlink {
   text-decoration: none;
