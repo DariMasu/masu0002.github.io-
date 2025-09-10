@@ -31,6 +31,9 @@ main article section{
     flex-direction: row;
 }
 
+article{
+    margin-bottom: 5%;
+}
 
 /* media styles */
 #presentationbox{

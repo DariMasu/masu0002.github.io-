@@ -23,6 +23,10 @@ figure{
     margin: 0;
 }
 figcaption{
+    font-family: "smartduck";
+    font-weight: bold;
+    font-size: 2em;
+    color: #370c17;
     margin-top: 3%;
     justify-self: center;
 }
