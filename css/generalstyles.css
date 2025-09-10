@@ -121,9 +121,6 @@ p {
   font-size: 20px;
   padding: 1% 4%;
 }
-ol{
-    font-size: 20px;
-}
 .starlist li:before{
     content: '\2605';
     margin: 0 1em;    /* any design */
@@ -213,8 +210,8 @@ footer ul{
   overflow: hidden;
   width: 100%;
 }
-footer ul li a img{
-  margin: auto;
+footer ul li a{
+  margin: 15%;
   vertical-align: middle; 
   display: inline-block;
 }

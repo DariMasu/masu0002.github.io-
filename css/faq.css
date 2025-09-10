@@ -14,6 +14,9 @@
 .answer:hover{
     opacity: 100;
     height: auto;
+    color: #782138;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* text styles */

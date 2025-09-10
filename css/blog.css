@@ -1,13 +1,36 @@
 /* jumplink styles */
-#jumplink{
-    color: #461220;
-    font-weight: bold;
+#jumplink {
+  color: #461220;
+  font-weight: bold;
 }
-#jumplink:hover{
-    color: #8c2f39;
+#jumplink:hover {
+  color: #8c2f39;
+}
+
+/* design styles */
+details {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/resources/clippedpaperarticle.webp");
+  background-size: 40% 40%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10% 0;
+}
+summary {
+  display: block;
+  justify-self: center;
+  align-self: center;
+}
+details p {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 3%;
+  padding-top: 1%;
 }
 
 /* text styles */
-h3{
-    background-size: 40% 80%;
+h3 {
+  background-size: 40% 80%;
 }
