@@ -1,3 +1,4 @@
+/* design styles */
 .question{
     background-image: url("/resources/paperbackground.jpg");
     background-size: cover;
@@ -14,6 +15,13 @@
     opacity: 100;
     height: auto;
 }
+
+/* text styles */
 h2{
     background-image: none;
+}
+.downarrow{
+    display: flex;
+    justify-self: center;
+    font-size: 1.7rem;
 }
