@@ -24,4 +24,5 @@ figure{
 }
 figcaption{
     margin-top: 3%;
+    justify-self: center;
 }
