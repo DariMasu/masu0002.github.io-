@@ -1,5 +1,3 @@
-
-
 /* jumplink styles */
 #jumplink{
     color: #461220;
@@ -7,4 +5,9 @@
 }
 #jumplink:hover{
     color: #8c2f39;
+}
+
+/* text styles */
+h3{
+    background-size: 40% 80%;
 }
