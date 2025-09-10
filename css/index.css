@@ -1,31 +1,53 @@
-#presentationbox{
-    background-color: #461220;
-    height: 10%;
-}
+/* layout styles */
 
 /* articles displayed in a column */
 main{
     display: flex;
     flex-direction: column;
 }
+
 /* image and text displayed in a row */
 #motivationarticle{
     display: flex;
     flex-direction: row;
 }
+
 /* portfolio sections displayed in a column */
 #portfolioarticle{
     display: flex;
     flex-direction: column;
 }
+
 /* portfolio section titles and text displayed in a column */
 /* does not affect motivation article as it has no sections */
 main article div{
     display: flex;
     flex-direction: column;
 }
+
 /* portfolio media and text displayed in a row */
 main article section{
     display: flex;
     flex-direction: row;
+}
+
+
+/* media styles */
+#presentationbox{
+    background-color: #461220;
+    height: 10%;
+}
+article section div, article div{
+    margin: 3% 5%;
+}
+/* this forces imgs inside the anchors align properly */
+.lanscapeanchor{
+    height: auto;
+    width: 35vw;
+    align-self: center;
+}
+.portraitanchor{
+    height: 40vh;
+    width: auto;
+    align-self: center;
 }

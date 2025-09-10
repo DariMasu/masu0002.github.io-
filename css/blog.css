@@ -1,0 +1,10 @@
+
+
+/* jumplink styles */
+#jumplink{
+    color: #461220;
+    font-weight: bold;
+}
+#jumplink:hover{
+    color: #8c2f39;
+}

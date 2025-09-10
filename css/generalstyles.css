@@ -86,6 +86,8 @@ main {
   min-height: 63vh;
   padding: 1% 2%;
 }
+
+/* text styles */
 h1 {
   color: rgb(0, 0, 0);
 }
@@ -95,13 +97,17 @@ h2 {
 p {
   font-size: large;
 }
-.portraitimage{
-    height: 25%;
-    width: 25%;
+
+/* media styles */
+.portraitmedia{
+    height: 40vh;
+    width: auto;
+    align-self: center;
 }
-.landscapeimage{
-    height: 25%;
-    width: 25%;
+.landscapemedia{
+    height: auto;
+    width: 35vw;
+    align-self: center;
 }
 
 /* aside styles*/
