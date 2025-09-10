@@ -37,8 +37,11 @@ article{
 
 /* media styles */
 #presentationbox{
-    background-color: #461220;
-    height: 10%;
+    background-color: aliceblue;
+    width: 100vw;
+    padding: 2%;
+    padding-bottom: 5%;
+    height: 300px;
 }
 article section div, article div{
     margin: 3% 5%;
