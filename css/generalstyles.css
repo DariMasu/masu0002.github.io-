@@ -102,13 +102,13 @@ h4 {
 }
 h1 {
   font-size: 32px;
-  color: rgb(0, 0, 0);
+  color: #461220;
   margin: 4%;
   text-align: center;
 }
 h2 {
   font-size: 26px;
-  color: rgb(0, 0, 0);
+  color: #782138;
   background-image: url("/resources/navpaperzealous.webp");
 }
 h3 {

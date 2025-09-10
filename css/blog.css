@@ -8,7 +8,8 @@
 }
 
 /* design styles */
-details, #blogpostlink {
+details,
+#blogpostlink {
   display: flex;
   flex-direction: column;
   background-image: url("/resources/stickynote.png");
@@ -20,15 +21,20 @@ details, #blogpostlink {
 }
 summary {
   display: block;
+  justify-items: center;
+  align-items: center;
+  font-size: 26px;
+}
+.swot {
   justify-self: center;
   align-self: center;
-  font-size: 26px;
+  width: 60%;
 }
 .blogpost {
   font-size: 24px;
   color: #461220;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 7%;
+  padding-right: 7%;
   padding-bottom: 3%;
   padding-top: 3%;
 }
@@ -40,5 +46,6 @@ h2 {
   text-align: center;
 }
 h3 {
+  background-image: url("/resources/navpaperzealouspink.webp");
   background-size: 40% 80%;
 }
