@@ -11,7 +11,7 @@
 details {
   display: flex;
   flex-direction: column;
-  background-image: url("/resources/clippedpaperarticle.webp");
+  background-image: url("/resources/stickynote.png");
   background-size: 40% 40%;
   background-size: cover;
   background-position: center;
@@ -22,15 +22,23 @@ summary {
   display: block;
   justify-self: center;
   align-self: center;
+  font-size: 26px;
 }
-details p {
-  padding-left: 15%;
-  padding-right: 15%;
+.blogpost {
+  font-size: 24px;
+  color: #461220;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 3%;
   padding-top: 1%;
 }
-
+#blogpostlink {
+  text-decoration: none;
+}
 /* text styles */
+h2 {
+  text-align: center;
+}
 h3 {
   background-size: 40% 80%;
 }
