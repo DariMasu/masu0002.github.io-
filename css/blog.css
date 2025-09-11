@@ -8,8 +8,7 @@
 }
 
 /* design styles */
-details,
-#blogpostlink {
+details {
   display: flex;
   flex-direction: column;
   background-image: url("/resources/stickynote.png");
@@ -23,7 +22,8 @@ summary {
   display: block;
   justify-items: center;
   align-items: center;
-  font-size: 26px;
+  font-size: 24px;
+  margin: 0 2%;
 }
 .swot {
   justify-self: center;
@@ -38,15 +38,32 @@ summary {
   color: #461220;
   padding-left: 7%;
   padding-right: 7%;
-  padding-bottom: 3%;
-  padding-top: 3%;
-}
-#blogpostlink {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
   text-decoration: none;
 }
+.readmore{
+  background-color: #461220;
+  height: 7%;
+  justify-self: center;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 1.5%;
+  margin: 2%;
+}
+.readmore a{
+  font-family: "smartduck";
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 /* text styles */
 h2 {
   text-align: center;
+  margin: 4%;
 }
 h3 {
   background-image: url("/resources/navpaperzealouspink.webp");

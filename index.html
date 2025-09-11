@@ -88,50 +88,50 @@
             /></a>
           </section>
 
-          <!-- animation portfolio section -->
-          <section>
-            <div class="landscapemedia">
-            <video controls>
-              <source src="/resources/introanimation.mp4" type="video/mp4"> Your browser does not support this video.
-            </video>
-            </div>
-
-            <div>
-              <h3>A tiiny animation intro for our short film studio</h3>
-              <h4>Technology used:</h4>
-              <ul class="starlist">
-                <li>Opentoonz</li>
-                <li>Gimp</li>
-                <li>Autodesk Sketchbook</li>
-              </ul>
-            </div>
-          </section>
-
           <!-- short film portfolio section -->
           <section>
             <div>
               <h3>A short film</h3>
-              <h4>Technology *I* used:</h4>
               <p>
                 This is another assignment we had, we worked in a biig team. I
-                was in charge of the script, the storyboard, the animation and
-                the subtitles. I also filmed a big part of the short film (audio
-                and video). It was the most fun out of all assignments.
+                was in charge of the script, the storyboard, the animation, the
+                subtitles and the animation. I also filmed a big part of the
+                short film (audio and video). It was the most fun out of all
+                assignments.
               </p>
+              <p id="boldtext">
+                Click the poster to download some behind the scenes footage.
+              </p>
+              <h4>Technology *I* used:</h4>
               <ul class="starlist">
                 <li>DaVinci Resolve (subtitles)</li>
                 <li>Access (database scene)</li>
                 <li>Canva (storyboard)</li>
                 <li>Autodesk Sketchbook</li>
+                <li>Opentoonz</li>
+                <li>Gimp</li>
               </ul>
             </div>
 
-            <a class="portraitanchor" href=""
-              ><img
-                class="portraitmedia"
-                src="/resources/shortmovieflyer.png"
-                alt="short film flyer"
-            /></a>
+            <div id="shortfilmmedia">
+              <a
+                class="portraitanchor"
+                href="/resources/chistarabota/bts/btsclip1.mov"
+                ><img
+                  class="portraitmedia"
+                  src="/resources/shortmovieflyer.png"
+                  alt="short film flyer"
+              /></a>
+              <div class="landscapemedia">
+                <video controls>
+                  <source
+                    src="/resources/chistarabota/chistarabota.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support this video.
+                </video>
+              </div>
+            </div>
           </section>
 
           <!-- collage portfolio section -->
@@ -168,7 +168,19 @@
             </div>
 
             <div id="presentationbox">
-              <iframe src="https://myhz-my.sharepoint.com/personal/masu0002_hz_nl/_layouts/15/Doc.aspx?sourcedoc={7fc53517-9d67-4d65-8407-38d6a87ce212}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="100%" height="72%" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+              <iframe
+                src="https://myhz-my.sharepoint.com/personal/masu0002_hz_nl/_layouts/15/Doc.aspx?sourcedoc={7fc53517-9d67-4d65-8407-38d6a87ce212}&amp;action=embedview&amp;wdAr=1.7777777777777777"
+                width="100%"
+                height="72%"
+                frameborder="0"
+                >This is an embedded
+                <a target="_blank" href="https://office.com"
+                  >Microsoft Office</a
+                >
+                presentation, powered by
+                <a target="_blank" href="https://office.com/webapps">Office</a
+                >.</iframe
+              >
             </div>
           </section>
         </article>
@@ -176,13 +188,10 @@
 
       <aside>
         <ul>
-          <li>
-            <a id="closemenuanchor" href="placeholder.html"
-              ><img
-                id="closemenuicon"
-                src="/resources/githubicon.png"
-                alt="close aside menu icon"
-            /></a>
+          <li id="closemenuicon">
+            <a id="closemenuanchor" href="placeholder.html">
+              <i class="fa fa-window-close" aria-hidden="true"></i>
+            </a>
           </li>
           <li>
             <a

@@ -72,9 +72,21 @@ article div {
 .portraitmedia{
   padding: 0 2%;
 }
+#shortfilmmedia{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
 
 /* aside fix */
 /* I literally just copied the same rule, I have no idea why it worked */
 aside ul {
   width: 15%;
+}
+
+/* text styles */
+#boldtext{
+    font-weight: bold;
 }

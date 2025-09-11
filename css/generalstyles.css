@@ -204,14 +204,11 @@ aside ul li a:hover:not(#closemenuanchor) {
 }
 #closemenuanchor {
   display: block;
-  height: 5vh;
-  width: 5vh;
   padding: 10% 20%;
+  color: #370c17;
 }
 #closemenuicon {
-  height: 100%;
-  width: 100%;
-  float: left;
+  font-size: 2em;
 }
 
 /* footer styles*/

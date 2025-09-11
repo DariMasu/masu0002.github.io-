@@ -1,82 +1,112 @@
 /* table styles */
-table, th, td{
-    border: 2px solid #782138;
-    text-align: center;
-    border-collapse: collapse;
-    padding: 0.5vh 1vh;
-    width: fit-content;
-    background-color: #fcb9b260;
+table {
+  margin: 1%;
+  margin-bottom: 5%;
 }
-th{
-    text-decoration: double;
-    background-color: #b34d59;
+table,
+th,
+td {
+  color: #370c17;
+  border: 2px solid #782138;
+  text-align: center;
+  border-collapse: collapse;
+  padding: 0.5vh;
+  width: fit-content;
 }
-.examtype{
-    text-align: left;
+td {
+  color: #370c17;
+  font-size: 1.2em;
+  background-color: #fcb9b29d;
+  font-weight: bold;
 }
-.coursestatus{
-    background-color: #fcb9b2;
+th {
+  font-family: "smartduck";
+  font-size: 2em;
+  text-decoration: double;
+  background-color: #b34d59;
 }
-.examstatus{
-    background-color: #b34d59;
+.examtype {
+  text-align: left;
+  padding-left: 1vh;
+}
+.coursestatus {
+  background-color: #b34d59c6;
+}
+.examstatus {
+  background-color: #b34d5998;
 }
 /* progress bar styles */
-#progressborder{
-    display: inline-block;
-    border-style: solid;
-    border-color: #461220;
-    border-radius: 5px;
-    margin: 2%;
-    width: 100vh;
-    z-index: 100;
+#progresscontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#nbsa{
-    display: inline-block;
-    background-color: #fcb9b2;
-    margin: 0;
-    padding: 0;
-    border-radius: 2px;
-    height: 100%;
-    width: 75%;
-    z-index: 100;
-    text-align: end;
+#progressborder {
+  border-style: solid;
+  border-color: #461220;
+  border-radius: 5px;
+  margin: 2%;
+  z-index: 100;
 }
-#currentprogress{
-    background-color: #782138;
-    border-radius: 2px;
-    height: 100%;
-    width: 40%;
+#nbsa,
+#currentprogress,
+#potentialprogress {
+  border-radius: 2px;
+  height: 100%;
 }
-#potentialprogress{
-    background-color: #b34d59;
-    border-radius: 2px;
-    height: 100%;
-    width: 60%;
+label {
+  font-family: "smartduck";
+  font-size: 1.7em;
+  color: #fcb9b2;
+  background-color: #370c17;
+  border-radius: 5px;
+  padding: 1%;
+}
+#nbsa {
+  background-color: #fcb9b2;
+  width: 75%;
+}
+#currentprogress {
+  background-color: #782138;
+  width: 40%;
+}
+#potentialprogress {
+  background-color: #b34d59;
+  width: 60%;
 }
 
 /* progress bar legend styles */
-#legend{
-    display: flex;
+#legend {
+  display: flex;
+  margin: 2%;
+  padding: 0;
 }
-#legend li{
-    display: inline;
-    margin: 0 2%;
+#legend li {
+  margin: 1% 2%;
+  width: fit-content;
+  list-style-type: none;
 }
-#nbsalegend{
-    color: #461220;
-    background-color: #fcb9b2;
-    padding: 1%;
-    border-radius: 5px;
+#nbsalegend,
+#potproglegend,
+#curproglegend {
+    font-size: 1.2em;
+  padding: 1%;
+  border-radius: 5px;
+  text-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
 }
-#potproglegend{
-    color: #461220;
-    background-color: #b34d59;
-    padding: 1%;
-    border-radius: 5px;
+#nbsalegend {
+  color: #461220;
+  background-color: #fcb9b2;
 }
-#curproglegend{
-    color: #fcb9b2;
-    background-color: #782138;
-    padding: 1%;
-    border-radius: 5px;
+#potproglegend {
+  color: #461220;
+  background-color: #b34d59;
+}
+#curproglegend {
+  color: #fcb9b2;
+  background-color: #782138;
 }
