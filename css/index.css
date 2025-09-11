@@ -1,59 +1,80 @@
 /* layout styles */
 
 /* articles displayed in a column */
-main{
-    display: flex;
-    flex-direction: column;
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 /* image and text displayed in a row */
-#motivationarticle{
-    display: flex;
-    flex-direction: row;
+#motivationarticle {
+  display: flex;
+  flex-direction: row;
 }
 
 /* portfolio sections displayed in a column */
-#portfolioarticle{
-    display: flex;
-    flex-direction: column;
+#portfolioarticle {
+  display: flex;
+  flex-direction: column;
 }
 
 /* portfolio section titles and text displayed in a column */
 /* does not affect motivation article as it has no sections */
-main article div{
-    display: flex;
-    flex-direction: column;
+main article div {
+  display: flex;
+  flex-direction: column;
 }
 
 /* portfolio media and text displayed in a row */
-main article section{
-    display: flex;
-    flex-direction: row;
+main article section {
+  display: flex;
+  flex-direction: row;
 }
 
-article{
-    margin-bottom: 5%;
+article {
+  margin-bottom: 5%;
 }
 
 /* media styles */
-#presentationbox{
-    background-color: aliceblue;
-    width: 100vw;
-    padding: 2%;
-    padding-bottom: 5%;
-    height: 300px;
+#presentationbox {
+  background-color: aliceblue;
+  width: 100vw;
+  padding: 2%;
+  padding-bottom: 5%;
+  height: 300px;
+  box-shadow: 1px 3px 5px #461220;
 }
-article section div, article div{
-    margin: 3% 5%;
+article section {
+  align-items: center;
+  justify-content: center;
+}
+article section div,
+article div {
+  margin: 3% 5%;
 }
 /* this forces imgs inside the anchors align properly */
-.lanscapeanchor{
-    height: auto;
-    width: 35vw;
-    align-self: center;
+.lanscapeanchor {
+  height: auto;
+  width: 35vw;
+  align-self: center;
+  padding: 0 2%;
 }
-.portraitanchor{
-    height: 40vh;
-    width: auto;
-    align-self: center;
+.portraitanchor {
+  height: 40vh;
+  width: auto;
+  align-self: center;
+  padding: 0 2%;
+}
+/* additional media styling */
+.lanscapemedia{
+  padding: 0 2%;
+}
+.portraitmedia{
+  padding: 0 2%;
+}
+
+/* aside fix */
+/* I literally just copied the same rule, I have no idea why it worked */
+aside ul {
+  width: 15%;
 }
