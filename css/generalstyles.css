@@ -18,10 +18,7 @@ h4 {
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
-  padding-left: 6%;
-  padding-right: 4%;
-  padding-bottom: 1%;
-  padding-top: 1%;
+  padding: 1% 4% 1% 6%;
 }
 h1 {
   font-size: 3.5em;
@@ -143,7 +140,7 @@ body {
 }
 main {
   background-color: #4612202c;
-  margin: 2% 3% 12vh 3%;
+  margin: 2% 3% 4% 3%;
   width: 75%;
   height: auto;
   min-height: 63vh;

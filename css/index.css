@@ -39,8 +39,7 @@ article {
 #presentationbox {
   background-color: aliceblue;
   width: 100vw;
-  padding: 2%;
-  padding-bottom: 5%;
+  padding: 2% 2% 5% 2%;
   height: 300px;
   box-shadow: 1px 3px 5px #461220;
 }

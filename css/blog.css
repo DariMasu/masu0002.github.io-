@@ -36,10 +36,7 @@ summary {
 .blogpost {
   font-size: 24px;
   color: #461220;
-  padding-left: 7%;
-  padding-right: 7%;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 7%;
   margin: 0;
   text-decoration: none;
 }
