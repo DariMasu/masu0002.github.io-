@@ -66,3 +66,14 @@ h3 {
   background-image: url("/resources/navpaperzealouspink.webp");
   background-size: 40% 80%;
 }
+
+/* media styles */
+#memecontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2%;
+}
+#memecontainer img{
+  margin: 2%;
+}
