@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Propadeutic phase content progress">
+    <meta name="description" content="Propadeutic phase content progress" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -48,7 +48,9 @@
           <tr>
             <td rowspan="3">1</td>
             <td>PCO</td>
-            <td class="coursestatus" style="background-color: #b34d5992;">In progress</td>
+            <td class="coursestatus" style="background-color: #b34d5992">
+              In progress
+            </td>
             <td>2.5</td>
             <td class="examtype">Presentation</td>
             <td class="examstatus">To be taken</td>
@@ -172,12 +174,10 @@
         <!-- progress bar -->
         <div id="progresscontainer">
           <label for="progressborder">Current progress:</label>
-          <div id="progressborder" style="height: 24px; width: 50%">
-            <div id="nbsa">
-              <div id="potentialprogress">
-                <div id="currentprogress"></div>
-              </div>
-            </div>
+          <div id="progressborder">
+            <div id="nbsa"><p class="progbarstat">1</p></div>
+            <div id="potentialprogress"><p class="progbarstat">2</p></div>
+            <div id="currentprogress"><p class="progbarstat">3</p></div>
           </div>
 
           <!-- progress bar legend -->

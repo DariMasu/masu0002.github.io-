@@ -43,17 +43,26 @@ th {
   align-items: center;
 }
 #progressborder {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 50%;
   border-style: solid;
   border-color: #461220;
   border-radius: 5px;
   margin: 2%;
   z-index: 100;
 }
+.progbarstat{
+  font-size: 1.3em;
+  font-weight: bolder;
+  padding: 2vh 2vw;
+  margin: 0;
+}
 #nbsa,
 #currentprogress,
 #potentialprogress {
   border-radius: 2px;
-  height: 100%;
 }
 label {
   font-family: "smartduck";
