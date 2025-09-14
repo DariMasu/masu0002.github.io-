@@ -28,17 +28,34 @@ summary {
 .swot {
   justify-self: center;
   align-self: center;
-  width: 70%;
+  width: 90%;
 }
 .swot li{
   font-size: 1.5em;
 }
+.blogcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2%;
+}
 .blogpost {
   font-size: 24px;
   color: #461220;
-  padding: 0 7%;
+  padding: 0 1%;
   margin: 0;
   text-decoration: none;
+}
+.blogcontent {
+  font-size: 1.7rem;
+  padding: 3%;
+  border-bottom: 3px solid #782138;
+  border-top: 3px solid #782138;
+  border-left: 3px dashed #8c2f39;
+  border-right: 3px dashed #8c2f39;
+}
+.blogpostmain{
+  background-color: #8c2f383f;
 }
 .readmore{
   background-color: #461220;
@@ -58,6 +75,13 @@ summary {
 }
 
 /* text styles */
+h1 {
+  background-image: url("/resources/navpaperzealouspink.webp");
+  background-size: 80% 100%;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
 h2 {
   text-align: center;
   margin: 4%;
@@ -76,4 +100,8 @@ h3 {
 }
 #memecontainer img{
   margin: 2%;
+}
+.landscapemedia{
+  width: 25vw;
+  padding-right: 3%;
 }
