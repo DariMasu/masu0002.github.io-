@@ -85,7 +85,7 @@ aside ul {
   width: 15%;
 }
 
-/* text styles */
-#boldtext{
-    font-weight: bold;
+/* link styles */
+a{
+  color: #8c2f39;
 }
