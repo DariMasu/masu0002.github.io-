@@ -33,6 +33,10 @@ h2,
 h3,
 h4 {
   font-family: "smartduck";
+  max-inline-size: 66ch;
+  /* while the smartduck font is loading or if it fails to load,
+  all text will be displayed in a system font */
+  font-display: swap;
 }
 h2,
 h3,
@@ -46,7 +50,7 @@ h4 {
 h1 {
   font-size: clamp(3.7em, 3.5em + 1.5vw, 4em);
   color: #461220;
-  margin: 4%;
+  margin: 2%;
   text-align: center;
 }
 h2 {
@@ -69,11 +73,14 @@ p {
   color: #370c17;
   font-size: clamp(1.4em, 1em + 1.5vw, 1.6em);
   padding: 1% 4%;
+  max-inline-size: 60ch;
+  text-align: justify;
+  line-height: 1.2;
 }
 .starlist li:before {
   /* this is the star unicode */
   content: "\2605";
-  margin: 0 1em; 
+  margin: 0 1em;
 }
 .starlist li {
   color: #461220;
@@ -128,7 +135,7 @@ nav li a {
   font-family: "smartduck";
   font-weight: bold;
   display: block;
-    font-size: clamp(1.7em, 1.6em + 1.5vw, 1.9em);
+  font-size: clamp(1.7em, 1.6em + 1.5vw, 1.9em);
   text-align: center;
   text-decoration: none;
   color: #461220;
@@ -262,7 +269,7 @@ footer ul li a {
   display: inline-block;
 }
 .socialsicon {
-  width: 5vh;
-  height: 5vh;
+  width: auto;
+  height: 7vh;
   mix-blend-mode: multiply;
 }
