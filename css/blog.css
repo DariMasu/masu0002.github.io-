@@ -22,42 +22,44 @@ summary {
   display: block;
   justify-items: center;
   align-items: center;
-  font-size: 24px;
   margin: 0 2%;
+}
+summary h2 {
+  font-size: clamp(2.8em, 2.6em + 2vw, 3.2em);
 }
 .swot {
   justify-self: center;
   align-self: center;
   width: 90%;
 }
-.swot li{
-  font-size: 1.5em;
+.swot li {
+  font-size: clamp(1.3em, 1.2em + 1.5vw, 1.4em);
 }
-.blogcontainer{
+.blogcontainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 2%;
 }
 .blogpost {
-  font-size: 24px;
+  font-size: clamp(1.6em, 1.5em + 1.5vw, 1.7em);
   color: #461220;
   padding: 0 1%;
   margin: 0;
   text-decoration: none;
 }
 .blogcontent {
-  font-size: 1.7rem;
+  font-size: clamp(1.7em, 1.6em + 1.5vw, 1.8em);
   padding: 3%;
   border-bottom: 3px solid #782138;
   border-top: 3px solid #782138;
   border-left: 3px dashed #8c2f39;
   border-right: 3px dashed #8c2f39;
 }
-.blogpostmain{
+.blogpostmain {
   background-color: #8c2f383f;
 }
-.readmore{
+.readmore {
   background-color: #461220;
   height: 7%;
   justify-self: center;
@@ -66,11 +68,11 @@ summary {
   padding: 1.5%;
   margin: 2%;
 }
-.readmore a{
+.readmore a {
   font-family: "smartduck";
   color: aliceblue;
   text-decoration: none;
-  font-size: 1.5em;
+    font-size: clamp(1.3em, 1.2em + 1.5vw, 1.6em);
   font-weight: bold;
 }
 
@@ -92,16 +94,16 @@ h3 {
 }
 
 /* media styles */
-#memecontainer{
+#memecontainer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 2%;
 }
-#memecontainer img{
+#memecontainer img {
   margin: 2%;
 }
-.landscapemedia{
+.landscapemedia {
   width: 25vw;
   padding-right: 3%;
 }

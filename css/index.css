@@ -29,10 +29,13 @@ main article div {
 main article section {
   display: flex;
   flex-direction: row;
+  border-bottom: 5px dashed #8c2f39;
+  margin: 2% 0;
+  padding-bottom: 2%;
 }
 
 article {
-  margin-bottom: 5%;
+  margin: 0;
 }
 
 /* media styles */

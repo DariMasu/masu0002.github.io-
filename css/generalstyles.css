@@ -1,4 +1,27 @@
 /* text styles */
+@media (min-width: 30em) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (min-width: 40em) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 50em) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 60em) {
+  html {
+    font-size: 110%;
+  }
+}
 @font-face {
   font-family: "smartduck";
   src: url("/smart-duck/Smart\ Duck.ttf") format(truetype);
@@ -21,37 +44,40 @@ h4 {
   padding: 1% 4% 1% 6%;
 }
 h1 {
-  font-size: 3.5em;
+  font-size: clamp(3.7em, 3.5em + 1.5vw, 4em);
   color: #461220;
   margin: 4%;
   text-align: center;
 }
 h2 {
-  font-size: 2.4em;
+  font-size: clamp(2.5em, 2em + 1vw, 3em);
   color: #782138;
   background-image: url("/resources/navpaperzealous.webp");
 }
 h3 {
-  font-size: 2em;
+  font-size: clamp(2em, 2em + 1.5vw, 2.5em);
+  margin: 0;
   background-image: url("/resources/paperscraph3.png");
 }
 h4 {
-  font-size: 1.8em;
+  font-size: clamp(2em, 1.8em + 1vw, 2.1em);
+  margin: 0;
   color: aliceblue;
   background-image: url("/resources/navpaperzealouspink.webp");
 }
 p {
   color: #370c17;
-  font-size: 1.5em;
+  font-size: clamp(1.4em, 1em + 1.5vw, 1.6em);
   padding: 1% 4%;
 }
 .starlist li:before {
+  /* this is the star unicode */
   content: "\2605";
-  margin: 0 1em; /* any design */
+  margin: 0 1em; 
 }
 .starlist li {
   color: #461220;
-  font-size: 20px;
+  font-size: clamp(1em, 0.75em + 1.5vw, 1.3em);
   font-weight: bold;
   list-style-type: none;
 }
@@ -102,7 +128,7 @@ nav li a {
   font-family: "smartduck";
   font-weight: bold;
   display: block;
-  font-size: 1.7em;
+    font-size: clamp(1.7em, 1.6em + 1.5vw, 1.9em);
   text-align: center;
   text-decoration: none;
   color: #461220;
@@ -116,7 +142,7 @@ nav li a:hover {
 .barsicon {
   margin-left: auto;
   margin-right: 5%;
-  font-size: 2em;
+  font-size: clamp(1.5em, 1.4em + 1.5vw, 1.8em);
   align-self: center;
 }
 
@@ -190,7 +216,7 @@ aside ul li:not(:first-child) {
 aside ul li a:not(#closemenuanchor) {
   font-family: "smartduck";
   font-weight: bold;
-  font-size: 1.7em;
+  font-size: clamp(1.2em, 1em + 1.5vw, 1.5em);
   display: block;
   color: #461220;
   border-bottom: 3px dotted #461220;
@@ -200,7 +226,7 @@ aside ul li a:not(#closemenuanchor) {
   text-align: end;
 }
 aside ul li a:hover:not(#closemenuanchor) {
-  font-size: 1.9em;
+  font-size: clamp(1.4em, 1.3em + 1.5vw, 1.7em);
   font-weight: bold;
 }
 #closemenuanchor {
@@ -209,7 +235,7 @@ aside ul li a:hover:not(#closemenuanchor) {
   color: #370c17;
 }
 #closemenuicon {
-  font-size: 2em;
+  font-size: clamp(1.4em, 1.3em + 1.5vw, 1.7em);
 }
 
 /* footer styles*/

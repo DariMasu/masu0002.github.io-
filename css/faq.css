@@ -1,30 +1,30 @@
 /* design styles */
-.question{
-    background-image: url("/resources/paperbackground.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 0.5% 1.5%;
-    margin: 2%;
-    box-shadow: 2px 2px 6px #461220;
+.question {
+  background-image: url("/resources/paperbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0.5% 1.5%;
+  margin: 2%;
+  box-shadow: 2px 2px 6px #461220;
 }
-.answer{
-    opacity: 0;
-    height: 0;
+.answer {
+  opacity: 0;
+  height: 0;
 }
-.answer:hover{
-    opacity: 100;
-    height: auto;
-    color: #370c17;
-    font-size: 20px;
-    font-weight: bold;
+.answer:hover {
+  opacity: 100;
+  height: auto;
+  color: #370c17;
+  font-size: clamp(1.4em, 1.3em + 1.5vw, 1.5em);
+  font-weight: bold;
 }
 
 /* text styles */
-h2{
-    background-image: none;
+h2 {
+  background-image: none;
 }
-.downarrow{
-    display: flex;
-    justify-self: center;
-    font-size: 1.7rem;
+.downarrow {
+  display: flex;
+  justify-self: center;
+  font-size: clamp(1.6em, 1.5em + 1.5vw, 1.8em);
 }

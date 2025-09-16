@@ -1,3 +1,8 @@
+/* body styles */
+main {
+  width: fit-content;
+}
+
 /* table styles */
 table {
   margin: 1%;
@@ -10,24 +15,22 @@ td {
   border: 2px solid #782138;
   text-align: center;
   border-collapse: collapse;
-  padding: 0.5vh;
   width: fit-content;
 }
 td {
   color: #370c17;
-  font-size: 1.2em;
+  font-size: clamp(1.3em, 1.2em + 1.5vw, 1.4em);
   background-color: #fcb9b29d;
-  font-weight: bold;
 }
 th {
   font-family: "smartduck";
-  font-size: 2em;
-  text-decoration: double;
+  font-size: clamp(1.6em, 1.3em + 1.5vw, 1.8em);
+  text-decoration: bolder;
   background-color: #b34d59;
 }
 .examtype {
   text-align: left;
-  padding-left: 1vh;
+  padding-left: 1vw;
 }
 .coursestatus {
   background-color: #b34d59c6;
@@ -53,8 +56,8 @@ th {
   margin: 2%;
   z-index: 100;
 }
-.progbarstat{
-  font-size: 1.3em;
+.progbarstat {
+  font-size: clamp(1.3em, 1.2em + 1.5vw, 1.5em);
   font-weight: bolder;
   padding: 2vh 2vw;
   margin: 0;
@@ -66,7 +69,7 @@ th {
 }
 label {
   font-family: "smartduck";
-  font-size: 1.7em;
+  font-size: clamp(1.5em, 1.4em + 1.5vw, 1.7em);
   color: #fcb9b2;
   background-color: #370c17;
   border-radius: 5px;
@@ -99,7 +102,7 @@ label {
 #nbsalegend,
 #potproglegend,
 #curproglegend {
-    font-size: 1.2em;
+    font-size: clamp(1.2em, 1.1em + 1.5vw, 1.4em);
   padding: 1%;
   border-radius: 5px;
   text-wrap: wrap;
