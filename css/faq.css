@@ -1,6 +1,6 @@
 /* design styles */
 .question {
-  background-image: url("/resources/paperbackground.jpg");
+  background-image: url("./resources/paperbackground.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0.5% 1.5%;

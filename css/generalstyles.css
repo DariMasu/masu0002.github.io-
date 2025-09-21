@@ -24,7 +24,7 @@
 }
 @font-face {
   font-family: "smartduck";
-  src: url("/smart-duck/Smart\ Duck.ttf") format(truetype);
+  src: url("./smart-duck/Smart\ Duck.ttf") format(truetype);
   font-weight: normal;
   font-style: normal;
 }
@@ -56,18 +56,18 @@ h1 {
 h2 {
   font-size: clamp(2.5em, 2em + 1vw, 3em);
   color: #782138;
-  background-image: url("/resources/navpaperzealous.webp");
+  background-image: url("./resources/navpaperzealous.webp");
 }
 h3 {
   font-size: clamp(2em, 2em + 1.5vw, 2.5em);
   margin: 0;
-  background-image: url("/resources/paperscraph3.png");
+  background-image: url("./resources/paperscraph3.png");
 }
 h4 {
   font-size: clamp(2em, 1.8em + 1vw, 2.1em);
   margin: 0;
   color: aliceblue;
-  background-image: url("/resources/navpaperzealouspink.webp");
+  background-image: url("./resources/navpaperzealouspink.webp");
 }
 p {
   color: #370c17;
@@ -91,7 +91,7 @@ p {
 
 /* header styles */
 header {
-  background-image: url("/resources/paperbackground.jpg");
+  background-image: url("./resources/paperbackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: sticky;
@@ -125,7 +125,7 @@ nav ul {
 }
 nav li {
   display: inline;
-  background-image: url("/resources/navpaperzealous.webp");
+  background-image: url("./resources/navpaperzealous.webp");
   background-size: 80% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,7 +162,7 @@ nav li a:hover {
   min-height: 100%;
 }
 body {
-  background-image: url("/resources/paperbackground.jpg");
+  background-image: url("./resources/paperbackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -213,7 +213,7 @@ aside ul {
   overflow: hidden;
   height: 100%;
   width: 15%;
-  background-image: url("/resources/asidebgmirrored.png");
+  background-image: url("./resources/asidebgmirrored.png");
   background-size: 100%;
   background-repeat: repeat-y;
 }
