@@ -4,14 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="The story about how and why I chose to study at HZ UAS">
-    <meta name="keywords" content="study choice, study motivation, university, choosing my university">
+    <meta
+      name="description"
+      content="The story about how and why I chose to study at HZ UAS"
+    />
+    <meta
+      name="keywords"
+      content="study choice, study motivation, university, choosing my university"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="/css/generalstyles.css" />
     <link rel="stylesheet" href="/css/blog.css" />
+    <script src="js/general.js"></script>
     <title>Study choice</title>
   </head>
 
@@ -26,12 +33,14 @@
           <li><a href="/faq.html">FAQ</a></li>
           <li><a href="/blog.html">Blog</a></li>
         </ul>
-        <a class="barsicon"><i class="fa-solid fa-bars"></i></a>
+        <a class="barsicon" onclick="openAside()"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
       </nav>
     </header>
 
     <div id="maincontainer">
-      <main class="blogpostmain">
+      <main class="blogpostmain" id="main">
         <h1>Study choice</h1>
 
         <p class="blogcontent">
@@ -45,10 +54,10 @@
         </p>
       </main>
 
-      <aside>
+      <aside id="aside">
         <ul>
           <li id="closemenuicon">
-            <a id="closemenuanchor" href="placeholder.html">
+            <a id="closemenuanchor" onclick="closeAside()">
               <i class="fa fa-window-close" aria-hidden="true"></i>
             </a>
           </li>

@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="A brutally honest swot analysis">
-    <meta name="keywords" content="personal swot, swot analysis, swot">
+    <meta name="description" content="A brutally honest swot analysis" />
+    <meta name="keywords" content="personal swot, swot analysis, swot" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="/css/generalstyles.css" />
     <link rel="stylesheet" href="/css/blog.css" />
+    <script src="js/general.js"></script>
     <title>Personal SWOT</title>
   </head>
 
@@ -26,73 +27,76 @@
           <li><a href="/faq.html">FAQ</a></li>
           <li><a href="/blog.html">Blog</a></li>
         </ul>
-        <a class="barsicon"><i class="fa-solid fa-bars"></i></a>
+        <a class="barsicon" onclick="openAside()"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
       </nav>
     </header>
 
     <div id="maincontainer">
-      <main class="blogpostmain">
+      <main class="blogpostmain" id="main">
         <h1>Personal SWOT</h1>
 
         <div class="blogcontent">
-        <section class="swot">
-          <h3>Strengths</h3>
-          <ul class="starlist">
-            <li>creativity</li>
-            <li>persistence</li>
-            <li>logic</li>
-            <li>teamwork</li>
-            <li>open-mindedness</li>
-            <li>time management</li>
-            <li>learning (FAST)</li>
-          </ul>
-        </section>
+          <section class="swot">
+            <h3>Strengths</h3>
+            <ul class="starlist">
+              <li>creativity</li>
+              <li>persistence</li>
+              <li>logic</li>
+              <li>teamwork</li>
+              <li>open-mindedness</li>
+              <li>time management</li>
+              <li>learning (FAST)</li>
+            </ul>
+          </section>
 
-        <section class="swot">
-          <h3>Weakenesses</h3>
-          <ul class="starlist">
-            <li>I hate public speaking</li>
-            <li>I lack confidence</li>
-            <li>I zone out easily</li>
-            <li>I am too stuborn sometimes</li>
-            <li>I blank out if I'm too stressed</li>
-            <li>I only know ONE language at a time</li>
-            <li>I am forgetful</li>
-          </ul>
-        </section>
+          <section class="swot">
+            <h3>Weakenesses</h3>
+            <ul class="starlist">
+              <li>I hate public speaking</li>
+              <li>I lack confidence</li>
+              <li>I zone out easily</li>
+              <li>I am too stuborn sometimes</li>
+              <li>I blank out if I'm too stressed</li>
+              <li>I only know ONE language at a time</li>
+              <li>I am forgetful</li>
+            </ul>
+          </section>
 
-        <section class="swot">
-          <h3>Opportunities</h3>
-          <ul class="starlist">
-            <li>
-              I can learn to make detailed plans to compensate for my
-              forgetfulness
-            </li>
-            <li>
-              I will push myself out of my comfort zone to achieve my creative
-              vision
-            </li>
-            <li>Being stubborn will make me even more determined</li>
-          </ul>
-        </section>
+          <section class="swot">
+            <h3>Opportunities</h3>
+            <ul class="starlist">
+              <li>
+                I can learn to make detailed plans to compensate for my
+                forgetfulness
+              </li>
+              <li>
+                I will push myself out of my comfort zone to achieve my creative
+                vision
+              </li>
+              <li>Being stubborn will make me even more determined</li>
+            </ul>
+          </section>
 
-        <section class="swot">
-          <h3>Threats</h3>
-          <ul class="starlist">
-            <li>I like having a routine</li>
-            <li>I doubt myself easily</li>
-            <li>
-              I am forgetful (I may have mentioned it already, I don't remember)
-            </li>
-          </ul>
-        </section>
+          <section class="swot">
+            <h3>Threats</h3>
+            <ul class="starlist">
+              <li>I like having a routine</li>
+              <li>I doubt myself easily</li>
+              <li>
+                I am forgetful (I may have mentioned it already, I don't
+                remember)
+              </li>
+            </ul>
+          </section>
         </div>
       </main>
 
-      <aside>
+      <aside id="aside">
         <ul>
           <li id="closemenuicon">
-            <a id="closemenuanchor" href="placeholder.html">
+            <a id="closemenuanchor" onclick="closeAside()">
               <i class="fa fa-window-close" aria-hidden="true"></i>
             </a>
           </li>

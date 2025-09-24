@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="css/generalstyles.css" />
     <link rel="stylesheet" href="css/faq.css" />
+    <script src="js/general.js"></script>
     <title>FAQ</title>
   </head>
 
@@ -29,12 +30,14 @@
           <li><a class="active" href="faq.html">FAQ</a></li>
           <li><a href="blog.html">Blog</a></li>
         </ul>
-        <a class="barsicon"><i class="fa-solid fa-bars"></i></a>
+        <a class="barsicon" onclick="openAside()"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
       </nav>
     </header>
 
     <div id="maincontainer">
-      <main>
+      <main id="main">
         <h1>Frequenly asked questions (and their answers step by step)</h1>
 
         <article class="question">
@@ -112,10 +115,10 @@
         </article>
       </main>
 
-      <aside>
+      <aside id="aside">
         <ul>
           <li id="closemenuicon">
-            <a id="closemenuanchor">
+            <a id="closemenuanchor" onclick="closeAside()">
               <i class="fa fa-window-close" aria-hidden="true"></i>
             </a>
           </li>

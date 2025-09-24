@@ -33,12 +33,12 @@
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="blog.html">Blog</a></li>
         </ul>
-        <a class="barsicon"><i class="fa-solid fa-bars"></i></a>
+        <a class="barsicon" onclick="openAside()"><i class="fa-solid fa-bars"></i></a>
       </nav>
     </header>
 
     <div id="maincontainer">
-      <main>
+      <main id="main">
         <h1>Why exactly ICT?</h1>
 
         <!-- motivation article -->
@@ -186,7 +186,7 @@
       <aside id="aside">
         <ul>
           <li id="closemenuicon">
-            <a id="closemenuanchor">
+            <a id="closemenuanchor" onclick="closeAside()">
               <i class="fa fa-window-close" aria-hidden="true"></i>
             </a>
           </li>

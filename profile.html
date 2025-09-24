@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="css/generalstyles.css" />
     <link rel="stylesheet" href="css/profile.css" />
+    <script src="js/general.js"></script>
     <title>My project</title>
   </head>
 
@@ -32,12 +33,14 @@
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="blog.html">Blog</a></li>
         </ul>
-        <a class="barsicon"><i class="fa-solid fa-bars"></i></a>
+        <a class="barsicon" onclick="openAside()"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
       </nav>
     </header>
 
     <div id="maincontainer">
-      <main>
+      <main id="main">
         <h1>Welcome to my introduction!</h1>
         <!-- intro article -->
         <article>
@@ -48,7 +51,7 @@
             <p>
               Hi, my name is Darina Masureva, but all my friends at home call me
               Max (it's a long story). I'm 19 and I come from Bulgaria. I speak
-              Bulgarian, English, French, un poquitito Espagnol and I'm starting
+              Bulgarian, English, French, un poquitito Español and I'm starting
               to learn some basic Dutch through duolingo. Art and science are my
               life and I'm a
               <em>big</em> foodie. I thrive near the sea and I love my friends
@@ -137,10 +140,10 @@
         </article>
       </main>
 
-      <aside>
+      <aside id="aside">
         <ul>
           <li id="closemenuicon">
-            <a id="closemenuanchor">
+            <a id="closemenuanchor" onclick="closeAside()">
               <i class="fa fa-window-close" aria-hidden="true"></i>
             </a>
           </li>

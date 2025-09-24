@@ -174,7 +174,7 @@ body {
 main {
   background-color: #4612202c;
   margin: 2% 3% 4% 3%;
-  width: 75%;
+  width: 100%;
   height: auto;
   min-height: 63vh;
   padding: 1% 2%;
@@ -198,8 +198,10 @@ iframe {
 
 /* aside styles*/
 aside {
+  width: 0;
+  display: none;
   background-image: linear-gradient(to right, #46122000, #461220, #461220);
-  width: 15%;
+  transition: none;
 }
 aside ul {
   position: fixed;

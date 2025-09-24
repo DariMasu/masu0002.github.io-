@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="css/generalstyles.css" />
     <link rel="stylesheet" href="css/blog.css" />
+    <script src="js/general.js"></script>
     <title>Blog</title>
   </head>
 
@@ -29,12 +30,12 @@
           <li><a href="faq.html">FAQ</a></li>
           <li><a class="active" href="blog.html">Blog</a></li>
         </ul>
-        <a class="barsicon"><i class="fa-solid fa-bars"></i></a>
+        <a class="barsicon" onclick="openAside()"><i class="fa-solid fa-bars"></i></a>
       </nav>
     </header>
 
     <div id="maincontainer">
-      <main>
+      <main id="main">
         <h1>Personal Blog</h1>
         <!-- study choice article -->
         <details>
@@ -157,8 +158,7 @@
         <details>
           <summary>
             <h2>
-              Hey, I found a cool paper on AI in clinical genetics you might
-              like:
+              Hey, I found a cool paper on AI in clinical genetics:
             </h2>
           </summary>
           <p class="blogpost">
@@ -179,10 +179,10 @@
         </details>
       </main>
 
-      <aside>
+      <aside id="aside">
         <ul>
           <li id="closemenuicon">
-            <a id="closemenuanchor">
+            <a id="closemenuanchor" onclick="closeAside()">
               <i class="fa fa-window-close" aria-hidden="true"></i>
             </a>
           </li>

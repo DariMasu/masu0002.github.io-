@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="/css/generalstyles.css" />
     <link rel="stylesheet" href="/css/blog.css" />
+        <script src="js/general.js"></script>
     <title>After graduating</title>
   </head>
 
@@ -26,12 +27,12 @@
           <li><a href="/faq.html">FAQ</a></li>
           <li><a href="/blog.html">Blog</a></li>
         </ul>
-        <a class="barsicon"><i class="fa-solid fa-bars"></i></a>
+                <a class="barsicon" onclick="openAside()"><i class="fa-solid fa-bars"></i></a>
       </nav>
     </header>
 
     <div id="maincontainer">
-      <main class="blogpostmain">
+      <main class="blogpostmain" id="main">
         <h1>After graduating</h1>
 
         <p class="blogcontent">
@@ -45,10 +46,10 @@
         </p>
       </main>
 
-      <aside>
+      <aside id="aside">
         <ul>
           <li id="closemenuicon">
-            <a id="closemenuanchor" href="placeholder.html">
+            <a id="closemenuanchor" onclick="closeAside()">
               <i class="fa fa-window-close" aria-hidden="true"></i>
             </a>
           </li>
