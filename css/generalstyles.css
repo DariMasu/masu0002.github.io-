@@ -182,14 +182,18 @@ main {
 
 /* media styles */
 .portraitmedia {
+  width: auto;
   height: auto;
-  width: 20vw;
+  max-height: 50vh;
   align-self: center;
+  margin: 2%;
 }
 .landscapemedia {
   height: auto;
+  width: auto;
   width: 30vw;
   align-self: center;
+  margin: 2%;
 }
 iframe {
   width: 100%;
@@ -201,7 +205,6 @@ aside {
   width: 0;
   display: none;
   background-image: linear-gradient(to right, #46122000, #461220, #461220);
-  transition: none;
 }
 aside ul {
   position: fixed;

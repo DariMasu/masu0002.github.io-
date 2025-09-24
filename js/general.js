@@ -16,3 +16,11 @@ function closeAside() {
   document.getElementById("main").style.width = "100%";
   document.getElementById("main").style.marginright = "2%";
 }
+
+// course status colors
+
+
+// exam status colors
+
+
+// progress bar calculator
