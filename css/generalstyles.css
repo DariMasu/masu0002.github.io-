@@ -200,7 +200,6 @@ iframe {
 aside {
   background-image: linear-gradient(to right, #46122000, #461220, #461220);
   width: 15%;
-  overflow: hidden;
 }
 aside ul {
   position: fixed;
@@ -239,6 +238,7 @@ aside ul li a:hover:not(#closemenuanchor) {
 #closemenuanchor {
   display: block;
   padding: 10% 20%;
+  width: fit-content;
   color: #370c17;
 }
 #closemenuicon {

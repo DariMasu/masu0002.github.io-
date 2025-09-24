@@ -102,7 +102,7 @@ label {
 #nbsalegend,
 #potproglegend,
 #curproglegend {
-    font-size: clamp(1.2em, 1.1em + 1.5vw, 1.4em);
+  font-size: clamp(1.2em, 1.1em + 1.5vw, 1.4em);
   padding: 1%;
   border-radius: 5px;
   text-wrap: wrap;

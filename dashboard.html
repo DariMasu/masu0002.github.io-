@@ -48,13 +48,10 @@
             <th>Grade</th>
           </tr>
 
-          <!-- TODO: de-hardcode -->
           <tr>
             <td rowspan="3">1</td>
             <td>PCO</td>
-            <td class="coursestatus" style="background-color: #b34d5992">
-              In progress
-            </td>
+            <td class="coursestatus">In progress</td>
             <td>2.5</td>
             <td class="examtype">Presentation</td>
             <td class="examstatus">To be taken</td>
@@ -62,8 +59,8 @@
           </tr>
 
           <tr>
-            <td>PB</td>
-            <td class="coursestatus">Upcoming</td>
+            <td>PBA</td>
+            <td class="coursestatus">In Progress</td>
             <td>5</td>
             <td class="examtype">Case study exam</td>
             <td class="examstatus">To be taken</td>
@@ -72,7 +69,7 @@
 
           <tr>
             <td>CSB</td>
-            <td class="coursestatus">Upcoming</td>
+            <td class="coursestatus">In Progress</td>
             <td>5</td>
             <td class="examtype">Written knowledge test</td>
             <td class="examstatus">To be taken</td>
@@ -179,9 +176,13 @@
         <div id="progresscontainer">
           <label for="progressborder">Current progress:</label>
           <div id="progressborder">
-            <div id="nbsa"><p class="progbarstat">1</p></div>
-            <div id="potentialprogress"><p class="progbarstat">2</p></div>
-            <div id="currentprogress"><p class="progbarstat">3</p></div>
+            <div id="nbsa"><p class="progbarstat">45/60</p></div>
+            <div id="potentialprogress">
+              <p class="progbarstat"><span id="potentialresult">35</span>/60</p>
+            </div>
+            <div id="currentprogress">
+              <p class="progbarstat"><span id="curresult">20</span>/60</p>
+            </div>
           </div>
 
           <!-- progress bar legend -->
