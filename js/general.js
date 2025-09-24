@@ -59,15 +59,15 @@ function examStatusLooper(allElements) {
 
 function examStatusColorCode(element) {
     if (element.innerHTML == "To be taken") {
-      element.style.backgroundcolor = "#b34d5998";
+      element.style.backgroundColor = "#b34d5998";
     } else if (element.innerHTML == "To be graded") {
-      element.style.backgroundcolor = "#782138c3";
+      element.style.backgroundColor = "#782138c3";
     } else if (element.innerHTML == "Failed waiting resit") {
-      element.style.backgroundcolor = "#ff3b5296";
+      element.style.backgroundColor = "#ff3b5296";
     } else if (element.innerHTML == "Passed") {
-      element.style.backgroundcolor = "#53ff59c2";
+      element.style.backgroundColor = "#53ff59c2";
     } else if (element.innerHTML == "Failed") {
-      element.style.backgroundcolor = "#ff3b52da";
+      element.style.backgroundColor = "#ff3b52da";
     };
 };
 
