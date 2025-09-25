@@ -1,6 +1,10 @@
 /* design styles */
 .question {
-  background-image: url("../resources/paperbackground.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-image: url("../resources/faqbackground.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0.5% 1.5%;
@@ -17,6 +21,7 @@
   color: #370c17;
   font-size: clamp(1.4em, 1.3em + 1.5vw, 1.5em);
   font-weight: bold;
+  align-self: center;
 }
 
 /* text styles */
