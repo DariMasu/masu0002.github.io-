@@ -1,30 +1,17 @@
 // open aside funtion
 function openAside() {
-  document.getElementById("aside").style.width = "10%";
+  document.getElementById("aside").style.width = "15%";
   document.getElementById("aside").style.display = "inline";
-  document.getElementById("aside").style.transition = "ease-in 5s";
+  document.getElementById("aside").style.transition = "color 0.3s ease"; 
   document.getElementById("main").style.width = "75%";
-  document.getElementById("main").style.marginright = "4%";
 };
 
 // close aside funtion 
 function closeAside() {
   document.getElementById("aside").style.width = "0";
   document.getElementById("aside").style.display = "none";
-  document.getElementById("aside").style.transition = "ease-out 5s";
-};
-
-// starting functions on load
-window.onload = function () {
-  const courseStatusFields = document.querySelectorAll(".coursestatus");
-  courseStatusLooper(courseStatusFields);
-
-  const examStatusFields = document.querySelectorAll(".examstatus");
-  examStatusLooper(examStatusFields);
-
-  const ecFields = document.querySelectorAll(".ecs");
-  const gradeFields = document.querySelectorAll(".grade");
-  progressCalculator(ecFields, gradeFields, examStatusFields);
+  document.getElementById("aside").style.transition = "color 0.3s ease";
+  document.getElementById("main").style.width = "100%";
 };
 
 // course status colors
@@ -74,4 +61,22 @@ function examStatusColorCode(element) {
 function progressCalculator(ecList, gradeList, examStatusList) {
   let potentialResult = 0;
   let currentResult = 0;
+};
+
+// aside open and close animation
+function toggleAsideAnimation() {
+  document.getElementById("aside").classList
+};
+
+// starting functions on load
+window.onload = function () {
+  const courseStatusFields = document.querySelectorAll(".coursestatus");
+  courseStatusLooper(courseStatusFields);
+
+  const examStatusFields = document.querySelectorAll(".examstatus");
+  examStatusLooper(examStatusFields);
+
+  const ecFields = document.querySelectorAll(".ecs");
+  const gradeFields = document.querySelectorAll(".grade");
+  progressCalculator(ecFields, gradeFields, examStatusFields);
 };
