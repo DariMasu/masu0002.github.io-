@@ -208,6 +208,9 @@ aside {
   display: none;
   background-image: linear-gradient(to right, #46122000, #461220, #461220);
 }
+.asideTransition {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 aside ul {
   position: fixed;
   list-style-type: none;

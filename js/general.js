@@ -1,9 +1,15 @@
+// aside open and close animation
+function toggleAsideAnimation() {
+  document.getElementById("aside").classList.toggle("asideTransition");
+};
+
 // open aside funtion
 function openAside() {
   document.getElementById("aside").style.width = "15%";
   document.getElementById("aside").style.display = "inline";
   document.getElementById("aside").style.transition = "color 0.3s ease"; 
   document.getElementById("main").style.width = "75%";
+  toggleAsideAnimation();
 };
 
 // close aside funtion 
@@ -12,6 +18,7 @@ function closeAside() {
   document.getElementById("aside").style.display = "none";
   document.getElementById("aside").style.transition = "color 0.3s ease";
   document.getElementById("main").style.width = "100%";
+  toggleAsideAnimation();
 };
 
 // course status colors
@@ -61,11 +68,6 @@ function examStatusColorCode(element) {
 function progressCalculator(ecList, gradeList, examStatusList) {
   let potentialResult = 0;
   let currentResult = 0;
-};
-
-// aside open and close animation
-function toggleAsideAnimation() {
-  document.getElementById("aside").classList
 };
 
 // starting functions on load
