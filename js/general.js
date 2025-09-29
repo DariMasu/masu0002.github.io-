@@ -1,16 +1,16 @@
 // aside open and close animation
 function toggleAsideAnimation() {
   document.getElementById("aside").classList.toggle("asideTransition");
-};
+}
 
 // open aside funtion
 function openAside() {
   document.getElementById("aside").style.width = "15%";
   document.getElementById("aside").style.display = "inline";
-  document.getElementById("aside").style.transition = "color 0.3s ease"; 
+  document.getElementById("aside").style.transition = "color 0.3s ease";
   document.getElementById("main").style.width = "75%";
   toggleAsideAnimation();
-};
+}
 
 // close aside funtion 
 function closeAside() {
@@ -19,14 +19,14 @@ function closeAside() {
   document.getElementById("aside").style.transition = "color 0.3s ease";
   document.getElementById("main").style.width = "100%";
   toggleAsideAnimation();
-};
+}
 
 // course status colors
 function courseStatusLooper(allElements) {
   for (let i = 0; i < allElements.length; i++) {
     courseStatusColorCode(allElements[i]);
-  };
-};
+  }
+}
 
 function courseStatusColorCode(element) {
   if (element.innerHTML == "Upcoming") {
@@ -39,16 +39,15 @@ function courseStatusColorCode(element) {
     element.style.backgroundColor = "#53ff59c2";
   } else if (element.innerHTML == "Failed") {
     element.style.backgroundColor = "#ff3b5298";
-  };
-};
+  }
+}
 
 // exam status colors
 function examStatusLooper(allElements) {
   for (let i = 0; i < allElements.length; i++) {
     examStatusColorCode(allElements[i]);
-    console.log(allElements);
-  };
-};
+  }
+}
 
 function examStatusColorCode(element) {
   if (element.innerHTML == "To be taken") {
@@ -61,14 +60,36 @@ function examStatusColorCode(element) {
     element.style.backgroundColor = "#53ff59c2";
   } else if (element.innerHTML == "Failed") {
     element.style.backgroundColor = "#ff3b52da";
-  };
-};
+  }
+}
 
 // progress bar calculator
 function progressCalculator(ecList, gradeList, examStatusList) {
   let potentialResult = 0;
   let currentResult = 0;
-};
+  let ecArray = Array.from(ecList);
+  let gradeArray = Array.from(gradeList);
+  let examStatusArray = Array.from(examStatusList);
+  let curGrade;
+
+  for (let i = 0; i < gradeArray.length; i++) {
+    curGrade = gradeArray[i].innerHTML;
+
+    if (curGrade >= 5.5) {
+      currentResult += parseFloat(ecArray[i].innerHTML);
+    } else if (curGrade <= 5.5 && examStatusArray[i].innerHTML == "Failed waiting resit") {
+      potentialResult += parseFloat(ecArray[i].innerHTML);
+    }
+  }
+
+  potentialResult += currentResult;
+  document.getElementById("potentialresult").innerHTML = potentialResult;
+  document.getElementById("potentialprogress").style.width = ((potentialResult / 60) * 100).toFixed(2) + "%";
+  console.log(document.getElementById("potentialprogress").style.width);
+  document.getElementById("curresult").innerHTML = currentResult;
+  document.getElementById("currentprogress").style.width = ((currentResult / 60) * 100).toFixed(2) + "%";
+  console.log(document.getElementById("currentprogress").style.width);
+}
 
 // starting functions on load
 window.onload = function () {
@@ -81,4 +102,4 @@ window.onload = function () {
   const ecFields = document.querySelectorAll(".ecs");
   const gradeFields = document.querySelectorAll(".grade");
   progressCalculator(ecFields, gradeFields, examStatusFields);
-};
+}
