@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="keywords" content="blog, blogpost, blogposts, programing experience, aspiration, aspirations, motivation, study motivation, study choice, swot, swot analysis">
+    <meta
+      name="keywords"
+      content="blog, blogpost, blogposts, programing experience, aspiration, aspirations, motivation, study motivation, study choice, swot, swot analysis"
+    />
     <meta
       name="description"
       content="Sharing my preparation, aspirations, skills and SWOT analysis"
@@ -15,7 +18,6 @@
     />
     <link rel="stylesheet" href="css/generalstyles.css" />
     <link rel="stylesheet" href="css/blog.css" />
-    <script src="js/general.js"></script>
     <title>Blog</title>
   </head>
 
@@ -30,7 +32,7 @@
           <li><a href="faq.html">FAQ</a></li>
           <li><a class="active" href="blog.html">Blog</a></li>
         </ul>
-        <a class="barsicon" onclick="openAside()"><i class="fa-solid fa-bars"></i></a>
+        <a id="barsicon"><i class="fa-solid fa-bars"></i></a>
       </nav>
     </header>
 
@@ -49,7 +51,11 @@
               through all of the information on the official site of the
               university.
             </p>
-            <img class="landscapemedia" src="./resources/unify.jpg" alt="unify logo" />
+            <img
+              class="landscapemedia"
+              src="./resources/unify.jpg"
+              alt="unify logo"
+            />
           </div>
           <div class="readmore">
             <a href="/blogposts/studychoiceblog.html" target="_blank"
@@ -94,7 +100,11 @@
               characteristics which can lead to some problems later on. Enjoy me
               overanalysing myself for the next 4 sections.
             </p>
-            <img class="landscapemedia" src="./resources/swot.png" alt="a swot chart" />
+            <img
+              class="landscapemedia"
+              src="./resources/swot.png"
+              alt="a swot chart"
+            />
           </div>
           <div class="readmore">
             <a href="/blogposts/swot.html" target="_blank">Read more</a>
@@ -142,7 +152,11 @@
                 src="./resources/goodatgooglingmeme.jpg"
                 alt="a meme about how a big part of being a programmer is googling things well"
               />
-              <img class="landscapemedia" src="./resources/bugmeme.jpg" alt="a meme about how you programming soltion always come to you at 2am" />
+              <img
+                class="landscapemedia"
+                src="./resources/bugmeme.jpg"
+                alt="a meme about how you programming soltion always come to you at 2am"
+              />
             </div>
           </div>
           <div class="readmore">
@@ -157,9 +171,7 @@
         <!-- ICT news article/paper article -->
         <details>
           <summary>
-            <h2>
-              Hey, I found a cool paper on AI in clinical genetics:
-            </h2>
+            <h2>Hey, I found a cool paper on AI in clinical genetics:</h2>
           </summary>
           <p class="blogpost">
             Artificial intelligence (AI) has been growing more powerful and
@@ -182,7 +194,7 @@
       <aside id="aside">
         <ul>
           <li id="closemenuicon">
-            <a id="closemenuanchor" onclick="closeAside()">
+            <a id="closemenuanchor">
               <i class="fa fa-window-close" aria-hidden="true"></i>
             </a>
           </li>
@@ -245,4 +257,5 @@
       </ul>
     </footer>
   </body>
+  <script src="js/general.js"></script>
 </html>

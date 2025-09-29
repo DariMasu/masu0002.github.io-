@@ -1,28 +1,25 @@
-// aside open and close animation
-function toggleAsideAnimation() {
-  document.getElementById("aside").classList.toggle("asideTransition");
-}
-
 // open aside funtion
-function openAside() {
-  document.getElementById("aside").style.width = "15%";
-  document.getElementById("aside").style.display = "inline";
-  document.getElementById("aside").style.transition = "color 0.3s ease";
-  document.getElementById("main").style.width = "75%";
-  toggleAsideAnimation();
-}
+const aside = document.querySelector("aside");
+const openBtn = document.getElementsByClassName("barsicon")[0];
+console.log(openBtn);
+
+openBtn.addEventListener("click", ()=>{
+  aside.classList.add("visible");
+});
+
+const closeBtn = document.getElementById("closemenuanchor");
+
+closeBtn.addEventListener("click", ()=>{
+  aside.classList.remove("visible");
+
+});
 
 // close aside funtion 
-function closeAside() {
-  document.getElementById("aside").style.width = "0";
-  document.getElementById("aside").style.display = "none";
-  document.getElementById("aside").style.transition = "color 0.3s ease";
-  document.getElementById("main").style.width = "100%";
-  toggleAsideAnimation();
-}
+
 
 // course status colors
 function courseStatusLooper(allElements) {
+ 
   for (let i = 0; i < allElements.length; i++) {
     courseStatusColorCode(allElements[i]);
   }
@@ -95,11 +92,12 @@ function progressCalculator(ecList, gradeList, examStatusList) {
 window.onload = function () {
   const courseStatusFields = document.querySelectorAll(".coursestatus");
   courseStatusLooper(courseStatusFields);
-
+  
   const examStatusFields = document.querySelectorAll(".examstatus");
   examStatusLooper(examStatusFields);
-
+  
   const ecFields = document.querySelectorAll(".ecs");
   const gradeFields = document.querySelectorAll(".grade");
   progressCalculator(ecFields, gradeFields, examStatusFields);
+  
 }

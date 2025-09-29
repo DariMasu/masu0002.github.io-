@@ -12,7 +12,6 @@
     />
     <link rel="stylesheet" href="/css/generalstyles.css" />
     <link rel="stylesheet" href="/css/blog.css" />
-    <script src="js/general.js"></script>
     <title>Personal SWOT</title>
   </head>
 
@@ -27,9 +26,7 @@
           <li><a href="/faq.html">FAQ</a></li>
           <li><a href="/blog.html">Blog</a></li>
         </ul>
-        <a class="barsicon" onclick="openAside()"
-          ><i class="fa-solid fa-bars"></i
-        ></a>
+        <a id="barsicon"><i class="fa-solid fa-bars"></i></a>
       </nav>
     </header>
 
@@ -96,7 +93,7 @@
       <aside id="aside">
         <ul>
           <li id="closemenuicon">
-            <a id="closemenuanchor" onclick="closeAside()">
+            <a id="closemenuanchor">
               <i class="fa fa-window-close" aria-hidden="true"></i>
             </a>
           </li>
@@ -159,4 +156,5 @@
       </ul>
     </footer>
   </body>
+  <script src="js/general.js"></script>
 </html>
