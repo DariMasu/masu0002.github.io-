@@ -30,10 +30,10 @@ summary h2 {
 .swot {
   justify-self: center;
   align-self: center;
-  width: 90%;
+  width: 55%;
 }
 .swot li {
-  font-size: clamp(1.3em, 1.2em + 1.5vw, 1.4em);
+  font-size: clamp(0.9em, 0.8em + 1.5vw, 1em);
 }
 .blogcontainer {
   display: flex;
@@ -55,6 +55,8 @@ summary h2 {
   border-top: 3px solid #782138;
   border-left: 3px dashed #8c2f39;
   border-right: 3px dashed #8c2f39;
+  justify-self: center;
+  align-items: center;
 }
 .blogpostmain {
   background-color: #8c2f383f;
@@ -91,6 +93,7 @@ h2 {
 h3 {
   background-image: url("../resources/navpaperzealouspink.webp");
   background-size: 40% 80%;
+  font-size: 1.5em;
 }
 
 /* media styles */
