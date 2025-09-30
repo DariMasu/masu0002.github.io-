@@ -1,30 +1,18 @@
-// open aside funtion
-const aside = document.querySelector("aside");
-const openBtn = document.getElementById("barsicon");
-console.log(openBtn);
-
-openBtn.addEventListener("click", ()=>{
-  aside.classList.add("visible");
-});
-
-const closeBtn = document.getElementById("closemenuanchor");
-
-closeBtn.addEventListener("click", ()=>{
-  aside.classList.remove("visible");
-
-});
-
-// close aside funtion 
-
-
-// course status colors
+/**
+ * loops through a nodelist containing cells from the course status column
+ * @param  {NodeList} allElements list to loop through
+ */
 function courseStatusLooper(allElements) {
- 
+
   for (let i = 0; i < allElements.length; i++) {
     courseStatusColorCode(allElements[i]);
   }
 }
 
+/**
+ * changes colors of cells depending on their content (the status of the course)
+ * @param  {HTMLElement} a cell from the NodeList which contains the status
+ */
 function courseStatusColorCode(element) {
   if (element.innerHTML == "Upcoming") {
     element.style.backgroundColor = "#b34d5998";
@@ -39,13 +27,20 @@ function courseStatusColorCode(element) {
   }
 }
 
-// exam status colors
+/**
+ * loops through a nodelist containing cells from the exam status column
+ * @param  {NodeList} allElements list to loop through
+ */
 function examStatusLooper(allElements) {
   for (let i = 0; i < allElements.length; i++) {
     examStatusColorCode(allElements[i]);
   }
 }
 
+/**
+ * changes colors of cells depending on their content (the status of the exam)
+ * @param  {HTMLElement} a cell from the NodeList which contains the status
+ */
 function examStatusColorCode(element) {
   if (element.innerHTML == "To be taken") {
     element.style.backgroundColor = "#b34d5998";
@@ -60,7 +55,13 @@ function examStatusColorCode(element) {
   }
 }
 
-// progress bar calculator
+/**
+ * Calculates and displays the currentResult (ECs already obtained) 
+ * and potentialResult (currentResult + ECs that can be obtained after resiting exams)
+ * @param  {NodeList} ecList list of ecs per exam
+ * @param  {NodeList} gradeList list of grades per exam
+ * @param  {NodeList} examStatusList list of statuses of exams
+ */
 function progressCalculator(ecList, gradeList, examStatusList) {
   let potentialResult = 0;
   let currentResult = 0;
@@ -88,7 +89,7 @@ function progressCalculator(ecList, gradeList, examStatusList) {
   console.log(document.getElementById("currentprogress").style.width);
 }
 
-// starting functions on load
+// taking the needed table cells and calling related funcions
 const courseStatusFields = document.querySelectorAll(".coursestatus");
 courseStatusLooper(courseStatusFields);
 
@@ -98,3 +99,19 @@ examStatusLooper(examStatusFields);
 const ecFields = document.querySelectorAll(".ecs");
 const gradeFields = document.querySelectorAll(".grade");
 progressCalculator(ecFields, gradeFields, examStatusFields);
+
+// aside-related
+// open aside funtion
+const aside = document.querySelector("aside");
+const openBtn = document.getElementById("barsicon");
+console.log(openBtn);
+
+openBtn.addEventListener("click", () => {
+  aside.classList.add("visible");
+});
+
+// close aside funtion 
+const closeBtn = document.getElementById("closemenuanchor");
+closeBtn.addEventListener("click", () => {
+  aside.classList.remove("visible");
+});
