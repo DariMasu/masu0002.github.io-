@@ -206,17 +206,21 @@ iframe {
 aside {
   /* opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
-  transform: translateX(15%);
-  z-index: 101;
+  transform: translateX(150px);
+  z-index: 1;
   pointer-events: none;
   display: flex; */
+  display: none;
   background-image: linear-gradient(to right, #46122000, #461220, #461220);
 }
 aside.visible {
-  opacity: 1;
+  /* opacity: 1;
   transform: translateX(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
   pointer-events: auto;
-  display: flex;
+  z-index: 2;
+  display: flex; */
+  display: block;
 }
 aside ul {
   position: fixed;
@@ -228,7 +232,6 @@ aside ul {
   overflow-wrap: break-word;
   overflow: hidden;
   height: 100%;
-  width: 15%;
   background-image: url("../resources/asidebgmirrored.png");
   background-size: 100%;
   background-repeat: repeat-y;
@@ -254,7 +257,7 @@ aside ul li a:hover:not(#closemenuanchor) {
 }
 #closemenuanchor {
   display: block;
-  padding: 10% 20%;
+  margin: 10% 20%;
   width: fit-content;
   color: #370c17;
 }
