@@ -1,6 +1,6 @@
 // open aside funtion
 const aside = document.querySelector("aside");
-const openBtn = document.getElementsByClassName("barsicon")[0];
+const openBtn = document.getElementById("barsicon");
 console.log(openBtn);
 
 openBtn.addEventListener("click", ()=>{
@@ -89,15 +89,12 @@ function progressCalculator(ecList, gradeList, examStatusList) {
 }
 
 // starting functions on load
-window.onload = function () {
-  const courseStatusFields = document.querySelectorAll(".coursestatus");
-  courseStatusLooper(courseStatusFields);
-  
-  const examStatusFields = document.querySelectorAll(".examstatus");
-  examStatusLooper(examStatusFields);
-  
-  const ecFields = document.querySelectorAll(".ecs");
-  const gradeFields = document.querySelectorAll(".grade");
-  progressCalculator(ecFields, gradeFields, examStatusFields);
-  
-}
+const courseStatusFields = document.querySelectorAll(".coursestatus");
+courseStatusLooper(courseStatusFields);
+
+const examStatusFields = document.querySelectorAll(".examstatus");
+examStatusLooper(examStatusFields);
+
+const ecFields = document.querySelectorAll(".ecs");
+const gradeFields = document.querySelectorAll(".grade");
+progressCalculator(ecFields, gradeFields, examStatusFields);
