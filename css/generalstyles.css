@@ -204,22 +204,10 @@ iframe {
 
 /* aside styles*/
 aside {
-  /* opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  transform: translateX(150px);
-  z-index: 1;
-  pointer-events: none;
-  display: flex; */
   display: none;
   background-image: linear-gradient(to right, #46122000, #461220, #461220);
 }
 aside.visible {
-  /* opacity: 1;
-  transform: translateX(0);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  pointer-events: auto;
-  z-index: 2;
-  display: flex; */
   display: block;
 }
 aside ul {
