@@ -1,14 +1,14 @@
 /* photo list styles */
-#photosection {
+#photoSection {
   display: flex;
   justify-content: center;
 }
-#photolist {
+#photoList {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-#photolist li {
+#photoList li {
   display: flex;
   background-color: aliceblue;
   width: fit-content;

@@ -7,13 +7,13 @@ main {
 }
 
 /* image and text displayed in a row */
-#motivationarticle {
+#motivationArticle {
   display: flex;
   flex-direction: row;
 }
 
 /* portfolio sections displayed in a column */
-#portfolioarticle {
+#portfolioArticle {
   display: flex;
   flex-direction: column;
 }
@@ -39,7 +39,7 @@ article {
 }
 
 /* media styles */
-#presentationbox {
+#presentationBox {
   background-color: aliceblue;
   width: 55vw;
   padding: 2% 2% 5% 2%;
@@ -54,27 +54,28 @@ article section div,
 article div {
   margin: 3% 5%;
 }
+
 /* this forces imgs inside the anchors align properly */
-.lanscapeanchor {
+.landscapeAnchor {
   height: auto;
   width: 35vw;
   align-self: center;
   padding: 0 2%;
 }
-.portraitanchor {
+.portraitAnchor {
   height: 40vh;
   width: auto;
   align-self: center;
   padding: 0 2%;
 }
 /* additional media styling */
-.lanscapemedia{
+.landscapeMedia{
   padding: 0 2%;
 }
-.portraitmedia{
+.portraitMedia{
   padding: 0 2%;
 }
-#shortfilmmedia{
+#shortFilmMedia{
     display: flex;
     flex-direction: column;
     height: 100%;

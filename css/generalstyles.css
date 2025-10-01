@@ -77,12 +77,12 @@ p {
   text-align: justify;
   line-height: 1.2;
 }
-.starlist li:before {
+.starList li:before {
   /* this is the star unicode */
   content: "\2605";
   margin: 0 1em;
 }
-.starlist li {
+.starList li {
   color: #461220;
   font-size: clamp(1em, 0.75em + 1.5vw, 1.3em);
   font-weight: bold;
@@ -148,7 +148,7 @@ nav li a:hover {
 .active {
   color: #b34d59;
 }
-#barsicon {
+#barsIcon {
   margin-left: auto;
   margin-right: 5%;
   font-size: clamp(1.5em, 1.4em + 1.5vw, 1.8em);
@@ -156,7 +156,7 @@ nav li a:hover {
 }
 
 /* body styles*/
-#maincontainer {
+#mainContainer {
   display: flex;
   justify-items: flex-end;
   width: 100%;
@@ -183,14 +183,14 @@ main {
 }
 
 /* media styles */
-.portraitmedia {
+.portraitMedia {
   width: auto;
   height: auto;
   max-height: 50vh;
   align-self: center;
   margin: 2%;
 }
-.landscapemedia {
+.landscapeMedia {
   height: auto;
   width: auto;
   width: 30vw;
@@ -227,7 +227,7 @@ aside ul {
 aside ul li:not(:first-child) {
   margin-top: 2%;
 }
-aside ul li a:not(#closemenuanchor) {
+aside ul li a:not(#closeMenuAnchor) {
   font-family: "smartduck";
   font-weight: bold;
   font-size: clamp(1.2em, 1em + 1.5vw, 1.5em);
@@ -239,17 +239,17 @@ aside ul li a:not(#closemenuanchor) {
   text-decoration: none;
   text-align: end;
 }
-aside ul li a:hover:not(#closemenuanchor) {
+aside ul li a:hover:not(#closeMenuAnchor) {
   font-size: clamp(1.4em, 1.3em + 1.5vw, 1.7em);
   font-weight: bold;
 }
-#closemenuanchor {
+#closeMenuAnchor {
   display: block;
   margin: 10% 20%;
   width: fit-content;
   color: #370c17;
 }
-#closemenuicon {
+#closeMenuIcon {
   font-size: clamp(1.4em, 1.3em + 1.5vw, 1.7em);
 }
 
@@ -276,7 +276,7 @@ footer ul li a {
   vertical-align: middle;
   display: inline-block;
 }
-.socialsicon {
+.socialsIcon {
   width: auto;
   height: 7vh;
   mix-blend-mode: multiply;

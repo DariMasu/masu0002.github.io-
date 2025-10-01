@@ -28,7 +28,7 @@
 h2 {
   background-image: none;
 }
-.downarrow {
+.downArrow {
   display: flex;
   justify-self: center;
   font-size: clamp(1.6em, 1.5em + 1.5vw, 1.8em);
