@@ -81,14 +81,11 @@ function progressCalculator(ecList, gradeList, examStatusList) {
   }
 
   potentialResult += currentResult;
-  console.log(document.getElementById("potentialresult"));
-  
+
   document.getElementById("potentialresult").innerText = potentialResult;
   document.getElementById("potentialProgress").style.width = ((potentialResult / 60) * 100).toFixed(2) + "%";
-  console.log(document.getElementById("potentialProgress").style.width);
   document.getElementById("curresult").innerHTML = currentResult;
   document.getElementById("currentProgress").style.width = ((currentResult / 60) * 100).toFixed(2) + "%";
-  console.log(document.getElementById("currentProgress").style.width);
 }
 
 // taking the needed table cells and calling related funcions
