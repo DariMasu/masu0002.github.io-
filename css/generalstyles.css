@@ -220,6 +220,7 @@ aside ul {
   overflow-wrap: break-word;
   overflow: hidden;
   height: 100%;
+  max-width: 15%;
   background-image: url("../resources/asidebgmirrored.png");
   background-size: 100%;
   background-repeat: repeat-y;
